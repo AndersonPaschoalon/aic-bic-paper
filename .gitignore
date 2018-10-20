@@ -37,3 +37,34 @@
 ./plots/equinix-1s/Weibull - Linearized data and linear fitting.dat
 ./plots/equinix-1s/Cauchy - Linearized data and linear fitting.dat
 ./plots/equinix-1s/QQplot - Pareto(MLH).dat
+./plots/lanDiurnal/QQplot - Pareto(LR).dat
+./plots/lanDiurnal/QQplot - Exponential(Me).dat
+./plots/lanDiurnal/Empirical CDF function.dat
+./plots/lanDiurnal/QQplot - Weibull.dat
+./plots/lanDiurnal/QQplot - Cauchy.dat
+./plots/lanDiurnal/QQplot - Normal.dat
+./plots/lanDiurnal/Pareto - Linearized data and linear fitting.dat
+./plots/lanDiurnal/Exponential - Linearized data and linear fitting.dat
+./plots/lanDiurnal/QQplot - Exponential(LR).dat
+./plots/lanDiurnal/Weibull - Linearized data and linear fitting.dat
+./plots/lanDiurnal/Cauchy - Linearized data and linear fitting.dat
+./plots/lanDiurnal/QQplot - Pareto(MLH).dat
+./plots/equinix-1s/QQplot - Pareto(LR).dat
+./plots/equinix-1s/QQplot - Exponential(Me).dat
+./plots/equinix-1s/QQplot - Weibull.dat
+./plots/equinix-1s/QQplot - Cauchy.dat
+./plots/equinix-1s/QQplot - Normal.dat
+./plots/equinix-1s/Weibull - Linearized data and linear fitting.svg
+./plots/equinix-1s/QQplot - Exponential(LR).svg
+./plots/equinix-1s/Pareto - Linearized data and linear fitting.dat
+./plots/equinix-1s/Exponential - Linearized data and linear fitting.dat
+./plots/equinix-1s/QQplot - Cauchy.svg
+./plots/equinix-1s/QQplot - Exponential(LR).dat
+./plots/equinix-1s/QQplot - Pareto(LR).svg
+./plots/equinix-1s/QQplot - Exponential(Me).svg
+./plots/equinix-1s/QQplot - Normal.svg
+./plots/equinix-1s/Pareto - Linearized data and linear fitting.dat.svg
+./plots/equinix-1s/Exponential - Linearized data and linear fitting.svg
+./plots/equinix-1s/Weibull - Linearized data and linear fitting.dat
+./plots/equinix-1s/Cauchy - Linearized data and linear fitting.dat
+./plots/equinix-1s/QQplot - Pareto(MLH).dat
