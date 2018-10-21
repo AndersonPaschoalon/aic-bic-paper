@@ -15,7 +15,6 @@ import math
 
 def print_header(title):
     """
-
     :param title:
     :return:
     """
@@ -965,7 +964,6 @@ def plot_aic_bic(aicbicfile1, pcaptitle1, aicbicfile2, pcaptitle2,
                  aicbicfile3, pcaptitle3, aicbicfile4, pcaptitle4,
                  title_sumary, plotfile_sumary, title_order, plotfile_order):
     """
-
     :param aicbicfile1:
     :param pcaptitle1:
     :param aicbicfile2:
@@ -1095,7 +1093,6 @@ def paper_aicbic_plots():
 
 def run_test():
     """
-
     :param plot_dir:
     :return:
     """
@@ -1167,5 +1164,4 @@ if __name__ == "__main__":
     elif args["test"]:
         # ./plots.py --test
         run_test()
-
 
