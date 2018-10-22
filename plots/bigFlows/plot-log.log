@@ -1,0 +1,43 @@
+
+################################################################################
+# Plot CDF fitting
+################################################################################
+Plotting Weibull aproximation vs Original set > plots/bigFlows/
+Plotting Exponential aproximation (linear regression) vs Original set > plots/bigFlows/
+Plotting Exponential aproximation (mean) vs Original set > plots/bigFlows/
+Plotting Normal aproximation vs Original set > plots/bigFlows/
+Plotting Weibull aproximation vs Original set > plots/bigFlows/
+Plotting Pareto aproximation (maximum likehood) vs Original set > plots/bigFlows/
+Plotting Cauchy aproximation vs Original set > plots/bigFlows/
+
+################################################################################
+# Plot Linear Regression graphs
+################################################################################
+Plotting: `Weibull - Linearized data and linear fitting.dat` > plots/bigFlows/
+Plotting Weibull - Cost J(iterations) convergence > plots/bigFlows/
+Plotting: `Exponential - Linearized data and linear fitting.dat` > plots/bigFlows/
+Plotting Exponential - Cost J(iterations) convergence > plots/bigFlows/
+Plotting: `Pareto - Linearized data and linear fitting.dat` > plots/bigFlows/
+Plotting Pareto - Cost J(iterations) convergence > plots/bigFlows/
+Plotting: `Pareto - Linearized data and linear fitting.dat` > plots/bigFlows/
+Plotting Cauchy - Linearized data and linear fitting > plots/bigFlows/
+
+################################################################################
+# Plot QQplots
+################################################################################
+Plotting: `QQplot - Cauchy.dat` > plots/bigFlows/
+Plotting: `QQplot - Exponential(LR).dat` > plots/bigFlows/
+Plotting: `QQplot - Exponential(Me).dat` > plots/bigFlows/
+Plotting: `QQplot - Normal.dat` > plots/bigFlows/
+Plotting: `QQplot - Pareto(LR).dat` > plots/bigFlows/
+Plotting: `QQplot - Pareto(MLH).dat` > plots/bigFlows/
+Plotting: `QQplot - Cauchy.dat` > plots/bigFlows/
+
+################################################################################
+# Model Evaluation Plots
+################################################################################
+Plotting: `Hurst Exponent.dat` > plots/bigFlows/
+Plotting: `Mean.dat` > plots/bigFlows/
+Plotting: `Standard Deviation.dat` > plots/bigFlows/
+Plotting: `Correlation.dat` > plots/bigFlows/
+Plotting: `costFunction.dat` > plots/bigFlows/

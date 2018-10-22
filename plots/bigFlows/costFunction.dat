@@ -1,0 +1,8 @@
+# Metrics cost function
+Exponential(Me), 3
+Weibull, 5
+Cauchy, 5
+Normal, 9
+Pareto(LR), 12
+Exponential(LR), 14
+Pareto(MLH), 15
