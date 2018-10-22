@@ -1,0 +1,43 @@
+
+################################################################################
+# Plot CDF fitting
+################################################################################
+Plotting Weibull aproximation vs Original set > plots/skype/
+Plotting Exponential aproximation (linear regression) vs Original set > plots/skype/
+Plotting Exponential aproximation (mean) vs Original set > plots/skype/
+Plotting Normal aproximation vs Original set > plots/skype/
+Plotting Weibull aproximation vs Original set > plots/skype/
+Plotting Pareto aproximation (maximum likehood) vs Original set > plots/skype/
+Plotting Cauchy aproximation vs Original set > plots/skype/
+
+################################################################################
+# Plot Linear Regression graphs
+################################################################################
+Plotting: `Weibull - Linearized data and linear fitting.dat` > plots/skype/
+Plotting Weibull - Cost J(iterations) convergence > plots/skype/
+Plotting: `Exponential - Linearized data and linear fitting.dat` > plots/skype/
+Plotting Exponential - Cost J(iterations) convergence > plots/skype/
+Plotting: `Pareto - Linearized data and linear fitting.dat` > plots/skype/
+Plotting Pareto - Cost J(iterations) convergence > plots/skype/
+Plotting: `Pareto - Linearized data and linear fitting.dat` > plots/skype/
+Plotting Cauchy - Linearized data and linear fitting > plots/skype/
+
+################################################################################
+# Plot QQplots
+################################################################################
+Plotting: `QQplot - Cauchy.dat` > plots/skype/
+Plotting: `QQplot - Exponential(LR).dat` > plots/skype/
+Plotting: `QQplot - Exponential(Me).dat` > plots/skype/
+Plotting: `QQplot - Normal.dat` > plots/skype/
+Plotting: `QQplot - Pareto(LR).dat` > plots/skype/
+Plotting: `QQplot - Pareto(MLH).dat` > plots/skype/
+Plotting: `QQplot - Cauchy.dat` > plots/skype/
+
+################################################################################
+# Model Evaluation Plots
+################################################################################
+Plotting: `Hurst Exponent.dat` > plots/skype/
+Plotting: `Mean.dat` > plots/skype/
+Plotting: `Standard Deviation.dat` > plots/skype/
+Plotting: `Correlation.dat` > plots/skype/
+Plotting: `costFunction.dat` > plots/skype/
