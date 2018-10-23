@@ -1,17 +1,36 @@
+./plots/lanDiurnal/QQplot\ -\ Normal.eps
 ./plots/lanDiurnal/QQplot\ -\ Pareto(LR).dat
+./plots/lanDiurnal/Weibull\ -\ Linearized\ data\ and\ linear\ fitting.eps
+./plots/lanDiurnal/QQplot\ -\ Exponential(Me).eps
+./plots/lanDiurnal/QQplot\ -\ Pareto(LR).eps
 ./plots/lanDiurnal/QQplot\ -\ Exponential(Me).dat
 ./plots/lanDiurnal/Empirical\ CDF\ function.dat
+./plots/lanDiurnal/QQplot\ -\ Weibull.eps
 ./plots/lanDiurnal/QQplot\ -\ Weibull.dat
+./plots/lanDiurnal/Exponential\ -\ Linearized\ data\ and\ linear\ fitting.eps
 ./plots/lanDiurnal/QQplot\ -\ Cauchy.dat
 ./plots/lanDiurnal/QQplot\ -\ Normal.dat
+./plots/lanDiurnal/data_lanDiurnal.txt
 ./plots/lanDiurnal/Pareto\ -\ Linearized\ data\ and\ linear\ fitting.dat
 ./plots/lanDiurnal/Exponential\ -\ Linearized\ data\ and\ linear\ fitting.dat
+./plots/lanDiurnal/QQplot\ -\ Pareto(MLH).eps
 ./plots/lanDiurnal/QQplot\ -\ Exponential(LR).dat
+./plots/lanDiurnal/Pareto\ -\ Linearized\ data\ and\ linear\ fitting.dat.eps
+./plots/lanDiurnal/QQplot\ -\ Exponential(LR).eps
+./plots/lanDiurnal/QQplot\ -\ Cauchy.eps
 ./plots/lanDiurnal/Weibull\ -\ Linearized\ data\ and\ linear\ fitting.dat
 ./plots/lanDiurnal/Cauchy\ -\ Linearized\ data\ and\ linear\ fitting.dat
 ./plots/lanDiurnal/QQplot\ -\ Pareto(MLH).dat
+./plots/bigFlows/QQplot\ -\ Pareto(LR).dat
+./plots/bigFlows/QQplot\ -\ Weibull.dat
+./plots/bigFlows/QQplot\ -\ Normal.dat
+./plots/bigFlows/Pareto\ -\ Linearized\ data\ and\ linear\ fitting.dat
+./plots/bigFlows/QQplot\ -\ Exponential(LR).dat
+./plots/bigFlows/Weibull\ -\ Linearized\ data\ and\ linear\ fitting.dat
+./plots/bigFlows/QQplot\ -\ Pareto(MLH).dat
 ./plots/equinix-1s/QQplot\ -\ Pareto(LR).dat
 ./plots/equinix-1s/QQplot\ -\ Exponential(Me).dat
+./plots/equinix-1s/Empirical\ CDF\ function.dat
 ./plots/equinix-1s/QQplot\ -\ Weibull.dat
 ./plots/equinix-1s/QQplot\ -\ Cauchy.dat
 ./plots/equinix-1s/QQplot\ -\ Normal.dat

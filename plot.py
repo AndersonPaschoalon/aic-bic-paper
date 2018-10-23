@@ -224,9 +224,9 @@ def test_calc_relative_position_rank_diff():
     vet_relative_rank_diff = calc_relative_position_rank_diff(m1, m2)
     print(vet_relative_rank_diff)
 
-
+"""
 def plotter_helper(ax, data1, data2, fmt, param_dict="", legend=True):
-    """
+    #
     A helper function to make a graph
     :param ax: The axes to draw to
     :param data1: The x data
@@ -234,7 +234,7 @@ def plotter_helper(ax, data1, data2, fmt, param_dict="", legend=True):
     :param fmt : plot format
     :param param_dict:
     :return: Dictionary of kwargs to pass to ax.plot
-    """
+    #
     out = ax.plot()
     if param_dict=="":
         out = ax.plot(data1, data2, fmt)
@@ -243,6 +243,7 @@ def plotter_helper(ax, data1, data2, fmt, param_dict="", legend=True):
     if legend:
         ax.legend()
     return out
+"""
 
 
 def errorbar_helper(ax, xdata, ydata, yerror, param_dict, legend=True):
@@ -269,7 +270,7 @@ def saver_helper(figure_object, file_name="default"):
     :return: void
     """
     figure_object.savefig(fname=file_name+'.pdf')
-    #figure_object.savefig(fname=file_name+'.svg')
+    # figure_object.savefig(fname=file_name+'.svg')
     figure_object.savefig(fname=file_name+'.png')
     figure_object.savefig(fname=file_name+'.eps')
 
@@ -282,12 +283,12 @@ def plt_free():
     plt.clf()
     plt.close()
 
-
+"""
 def test_saver_helper():
-    """
+    #
     #
     :return:
-    """
+    #
     os.system('mkdir -p test')
     data1, data2, data3, data4 = np.random.randn(4, 100)
     fig, ax = plt.subplots(1, 1)
@@ -297,6 +298,7 @@ def test_saver_helper():
     plt.title('Sample title')
     plt.grid()
     saver_helper(fig, file_name="test/dispersion")
+"""
 
 
 ########################################################################################################################
