@@ -1,0 +1,43 @@
+
+################################################################################
+# Plot CDF fitting
+################################################################################
+Plotting Weibull aproximation vs Original set > plots/equinix-1s/
+Plotting Exponential aproximation (linear regression) vs Original set > plots/equinix-1s/
+Plotting Exponential aproximation (mean) vs Original set > plots/equinix-1s/
+Plotting Normal aproximation vs Original set > plots/equinix-1s/
+Plotting Weibull aproximation vs Original set > plots/equinix-1s/
+Plotting Pareto aproximation (maximum likehood) vs Original set > plots/equinix-1s/
+Plotting Cauchy aproximation vs Original set > plots/equinix-1s/
+
+################################################################################
+# Plot Linear Regression graphs
+################################################################################
+Plotting: `Weibull - Linearized data and linear fitting.dat` > plots/equinix-1s/
+Plotting Weibull - Cost J(iterations) convergence > plots/equinix-1s/
+Plotting: `Exponential - Linearized data and linear fitting.dat` > plots/equinix-1s/
+Plotting Exponential - Cost J(iterations) convergence > plots/equinix-1s/
+Plotting: `Pareto - Linearized data and linear fitting.dat` > plots/equinix-1s/
+Plotting Pareto - Cost J(iterations) convergence > plots/equinix-1s/
+Plotting: `Pareto - Linearized data and linear fitting.dat` > plots/equinix-1s/
+Plotting Cauchy - Linearized data and linear fitting > plots/equinix-1s/
+
+################################################################################
+# Plot QQplots
+################################################################################
+Plotting: `QQplot - Cauchy.dat` > plots/equinix-1s/
+Plotting: `QQplot - Exponential(LR).dat` > plots/equinix-1s/
+Plotting: `QQplot - Exponential(Me).dat` > plots/equinix-1s/
+Plotting: `QQplot - Normal.dat` > plots/equinix-1s/
+Plotting: `QQplot - Pareto(LR).dat` > plots/equinix-1s/
+Plotting: `QQplot - Pareto(MLH).dat` > plots/equinix-1s/
+Plotting: `QQplot - Cauchy.dat` > plots/equinix-1s/
+
+################################################################################
+# Model Evaluation Plots
+################################################################################
+Plotting: `Hurst Exponent.dat` > plots/equinix-1s/
+Plotting: `Mean.dat` > plots/equinix-1s/
+Plotting: `Standard Deviation.dat` > plots/equinix-1s/
+Plotting: `Correlation.dat` > plots/equinix-1s/
+Plotting: `costFunction.dat` > plots/equinix-1s/
