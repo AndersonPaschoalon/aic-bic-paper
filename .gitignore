@@ -1,3 +1,6 @@
+test_ignore1
+test ignore2
+test\ ignore3
 ./plots/lanDiurnal/QQplot\ -\ Normal.eps
 ./plots/lanDiurnal/QQplot\ -\ Pareto(LR).dat
 ./plots/lanDiurnal/Weibull\ -\ Linearized\ data\ and\ linear\ fitting.eps
