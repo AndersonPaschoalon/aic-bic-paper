@@ -1093,12 +1093,10 @@ def paper_aicbic_plots():
                  title_order="AIC and BIC position", plotfile_order=PLOT_DIR+'paper/aic-bic-order')
 
 
+"""
 def run_test():
-    """
-    :param plot_dir:
-    :return:
-    """
-    """
+    #:param plot_dir:
+    #:return:
     PLOT_DIR = "./plots/"
     title = "AIC and BIC values"
     aicbic1 = load_csv_str(datafile=PLOT_DIR + "skype/Aic-Bic.dat.csv")
@@ -1140,8 +1138,25 @@ def run_test():
     plt.grid(color='black', linestyle=':', axis='y')
     saver_helper(fig, file_name=PLOT_DIR+"aic-plots-2")
     plt_free()
-    """
     print("run_test()")
+"""
+
+def help_menu():
+    print("Usage: plot.py [OPTION] [DIRECTORY]")
+    print("Create the plots for the simulations.")
+    print("  --help         Display this help menu")
+    print("  --simulation   Create the plots using the data created by a  run.py execution.")
+    print("                 [DIRECTORY] is the relative path for directory where the data was generated")
+    print("                 Eg.:")
+    print("                 ./plots.py --simulation \"./plots/skype/\"")
+    print("  --paper        Crete the plots for the article. It uses the simulation data on the directories:")
+    print("                 * plots/bigFlows: lan gateway pcap")
+    print("                 * plots/equinix-1s: wan pcap") 
+    print("                 * plots/lanDiurnal: ")
+    print("                 * plots/skype: Skype pcap")
+    print("                 Eg.:")
+    print("                 ./plots.py --paper")
+    print("")
 
 
 if __name__ == "__main__":
@@ -1151,19 +1166,17 @@ if __name__ == "__main__":
     parser.add_argument("--paper", action='store_true',
                         help="run sumarry plots for 4 the 4 experiments used on the paper..",
                         required=False)
-    parser.add_argument("--test", type=str, nargs="+", help="run test", required=False)
-    parser.add_argument("--test2", type=str, nargs="+", help="run test2", required=False)
+    parser.add_argument("--man", action='store_true', help="Manual", required=False)
 
-    # args = vars(parser.parse_args()) # convert parser object to a dictionary
-    args = args = {'paper': True, 'test': True, 'simulation': None, 'test2': None}
-
+    args = vars(parser.parse_args()) # convert parser object to a dictionary
+    #args = args = {'paper': True, 'test': True, 'simulation': None, 'test2': None}
     if args["simulation"]:
         # ./plots.py --simulation "./plots/skype/"
         dataprocessor_simulation_plot(args.get("simulation")[0])
     elif args["paper"]:
         # ./plots.py --paper
         paper_aicbic_plots()
-    elif args["test"]:
-        # ./plots.py --test
-        run_test()
+    elif args["man"]:
+        # ./plots.py --help
+        help_menu()
 
