@@ -7,10 +7,11 @@ import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 import math
+import matplotlib
 
 
 ########################################################################################################################
-# Plot Utilsfunctions
+# Utils
 ########################################################################################################################
 
 def print_header(title):
@@ -94,17 +95,6 @@ def order_matrix(mtr, n_column):
     :param mtr:
     :param n_column:
     :return:
-    """
-    """
-    col_str = column(mtr, n_column)
-    col_float = [float(i) for i in col_str]
-    col_float = sorted(col_float)
-    mtr_out = []
-    for i in range(0, len(col_float)):
-        for j in range(0, len(col_float)):
-            if float(mtr[j][n_column]) == col_float[i]:
-                mtr_out.append(mtr[j])
-    return mtr_out
     """
     mtr = sorted(mtr, key=lambda mtr: float(mtr[n_column]))
     return mtr
@@ -224,27 +214,6 @@ def test_calc_relative_position_rank_diff():
     vet_relative_rank_diff = calc_relative_position_rank_diff(m1, m2)
     print(vet_relative_rank_diff)
 
-"""
-def plotter_helper(ax, data1, data2, fmt, param_dict="", legend=True):
-    #
-    A helper function to make a graph
-    :param ax: The axes to draw to
-    :param data1: The x data
-    :param data2: The y data
-    :param fmt : plot format
-    :param param_dict:
-    :return: Dictionary of kwargs to pass to ax.plot
-    #
-    out = ax.plot()
-    if param_dict=="":
-        out = ax.plot(data1, data2, fmt)
-    else:
-        out = ax.plot(data1, data2, fmt, **param_dict)
-    if legend:
-        ax.legend()
-    return out
-"""
-
 
 def errorbar_helper(ax, xdata, ydata, yerror, param_dict, legend=True):
     """
@@ -283,26 +252,9 @@ def plt_free():
     plt.clf()
     plt.close()
 
-"""
-def test_saver_helper():
-    #
-    #
-    :return:
-    #
-    os.system('mkdir -p test')
-    data1, data2, data3, data4 = np.random.randn(4, 100)
-    fig, ax = plt.subplots(1, 1)
-    plotter_helper(ax, data1, data2, param_dict=dict(color='green', marker='v'))
-    plotter_helper(ax, 0.5*data1, 1.5*data2, param_dict=dict(marker='^', color='cyan', label='quadratic'))
-    ax.legend(dict(loc='best', fancyvox=True, shadow=True))
-    plt.title('Sample title')
-    plt.grid()
-    saver_helper(fig, file_name="test/dispersion")
-"""
-
 
 ########################################################################################################################
-# plot scrits
+# Plot functions
 ########################################################################################################################
 
 
@@ -660,16 +612,16 @@ def plot_cost_function_all(costfunction1="", costfunction2="", costfunction3="",
     r3 = [x + 2*bar_width for x in r1]
     r4 = [x + 3*bar_width for x in r1]
     fig, ax = plt.subplots()
-    # Create blue bars
-    ax.bar(r1, bars1, width=bar_width, color='springgreen', edgecolor='black', capsize=7, label=bar1label)
-    # Create cyan bars
-    ax.bar(r2, bars2, width=bar_width, color='fuchsia', edgecolor='black', capsize=7, label=bar2label)
-    ax.bar(r3, bars3, width=bar_width, color='mediumblue', edgecolor='black', capsize=7, label=bar3label)
-    ax.bar(r4, bars4, width=bar_width, color='gold', edgecolor='black', capsize=7, label=bar4label)
+    ax.bar(r1, bars1, width=bar_width, color='springgreen', hatch="////", lw=1,  edgecolor='#003300', capsize=7, label=bar1label)
+    ax.bar(r2, bars2, width=bar_width, color='fuchsia', hatch="\\\\\\\\",  lw=1, edgecolor='#660066', capsize=7, label=bar2label)
+    ax.bar(r3, bars3, width=bar_width, color='mediumblue', hatch="----", lw=1, edgecolor='#000066', capsize=7, label=bar3label)
+    ax.bar(r4, bars4, width=bar_width, color='gold', hatch="xxxx",  lw=1, edgecolor='#666600', capsize=7, label=bar4label)
     plt.xticks([r + bar_width for r in range(len(bars1))], xticks, rotation=45)
     plt.ylabel(ylabel)
+    plt.xlabel('model')
     plt.title(title)
     plt.legend()
+    plt.grid(color='black', linestyle=':', axis='y')
     plt.tight_layout()
     saver_helper(fig, file_name=plotfile)
     plt_free()
@@ -720,7 +672,7 @@ def plot_cost_function_all_pcap():
     print(costfunction_data4)
 """
 
-
+"""
 def map_model_color(model):
     color = "white"
     if model == "Cauchy":
@@ -740,8 +692,9 @@ def map_model_color(model):
     else:
         print("Error, model not found: "+str(model))
     return color
+"""
 
-
+"""
 def create_plot_data_costfunction(costfunction_vector):
     data_vector = []
     for i in range (0, len(costfunction_vector)):
@@ -751,19 +704,7 @@ def create_plot_data_costfunction(costfunction_vector):
         data1.append(map_model_color(costfunction_vector[i][0]))
         data_vector.append(data1)
     return data_vector
-
-def test_plot_cost_function_all():
-    """
-    #
-    :return:
-    """
-    PLOT_DIR = "./plots/skype/"
-    plot_cost_function_all(costfunction1=PLOT_DIR + "costFunction1.dat", costfunction2=PLOT_DIR + "costFunction1.dat",
-                           costfunction3=PLOT_DIR + "costFunction1.dat", costfunction4=PLOT_DIR + "costFunction1.dat",
-                           pcapname1="pcaptitle1", pcapname2="pcaptitle1",
-                           pcapname3="pcaptitle1", pcapname4="pcaptitle1",
-                           title="title-example", plotfile="plotfile-all-functions")
-
+"""
 
 def plot_costfunction_vs_aicbic(aicbic1, costfunction1, pcaptitle1,
                                 aicbic2, costfunction2, pcaptitle2,
@@ -812,11 +753,10 @@ def plot_costfunction_vs_aicbic(aicbic1, costfunction1, pcaptitle1,
     #print("* " + pcaptitle4)
     bars4 = calc_relative_position_rank_diff(costfunction_data4, aicbic_data4)
     # Horizontal line
-    hline1 = len(costfunction_data4)/2
+    hline1 = (len(costfunction_data4) - 1)/2
     hline2 = -hline1
     xticks = ['0', '1', '2', '3', '4', '5', '6']
     bar_width = 0.2
-    ylabel = 'height'
     bar1label = pcaptitle1
     bar2label = pcaptitle2
     bar3label = pcaptitle3
@@ -827,34 +767,110 @@ def plot_costfunction_vs_aicbic(aicbic1, costfunction1, pcaptitle1,
     r3 = [x + 2*bar_width for x in r1]
     r4 = [x + 3*bar_width for x in r1]
     fig, ax = plt.subplots()
-    # Create blue bars
-    ax.bar(r1, bars1, width=bar_width, color='springgreen', edgecolor='black', capsize=7, label=bar1label)
-    ax.bar(r2, bars2, width=bar_width, color='fuchsia', edgecolor='black', capsize=7, label=bar2label)
-    ax.bar(r3, bars3, width=bar_width, color='mediumblue', edgecolor='black', capsize=7, label=bar3label)
-    ax.bar(r4, bars4, width=bar_width, color='gold', edgecolor='black', capsize=7, label=bar4label)
+    # Create blue bars #ff0000
+    ax.bar(r1, bars1, width=bar_width, color='springgreen', hatch="////", lw=1,  edgecolor='#003300', capsize=7, label=bar1label)
+    ax.bar(r2, bars2, width=bar_width, color='fuchsia', hatch="\\\\\\\\",  lw=1, edgecolor='#660066', capsize=7, label=bar2label)
+    ax.bar(r3, bars3, width=bar_width, color='mediumblue', hatch="----", lw=1, edgecolor='#000066', capsize=7, label=bar3label)
+    ax.bar(r4, bars4, width=bar_width, color='gold', hatch="xxxx",  lw=1, edgecolor='#666600', capsize=7, label=bar4label)
     # create hline
     plt.axhline(hline1, color="red")
     plt.axhline(hline2, color="red")
     # general layout
     plt.xticks([r + bar_width for r in range(len(bars1))], xticks)
-    plt.ylabel(ylabel)
+    plt.ylabel('ranking delta')
     plt.title(title)
     plt.legend()
+    plt.grid(color='black', linestyle=':', axis='y')
     saver_helper(fig, file_name=plotfile)
     plt_free()
 
 
-def test_plot_costfunction_vs_aicbic():
-    """
-    #
-    """
-    PLOT_DIR = "./plots/skype/"
-    plot_costfunction_vs_aicbic(PLOT_DIR + "Aic-Bic1.dat", PLOT_DIR + "costFunction1.dat", "pcaptitle1",
-                                PLOT_DIR + "Aic-Bic2.dat", PLOT_DIR + "costFunction2.dat", "pcaptitle2",
-                                PLOT_DIR + "Aic-Bic3.dat", PLOT_DIR + "costFunction3.dat", "pcaptitle3",
-                                PLOT_DIR + "Aic-Bic4.dat", PLOT_DIR + "costFunction4.dat", "pcaptitle4",
-                                "title", "plotfile")
 
+def plot_aic_bic(aicbicfile1, pcaptitle1, aicbicfile2, pcaptitle2,
+                 aicbicfile3, pcaptitle3, aicbicfile4, pcaptitle4,
+                 title_sumary, plotfile_sumary, title_order, plotfile_order):
+    """
+    :param aicbicfile1:
+    :param pcaptitle1:
+    :param aicbicfile2:
+    :param pcaptitle2:
+    :param aicbicfile3:
+    :param pcaptitle3:
+    :param aicbicfile4:
+    :param pcaptitle4:
+    :param title_sumary:
+    :param plotfile_sumary:
+    :param title_order:
+    :param plotfile_order:
+    :return:
+    """
+    aicbic1 = load_csv_str(datafile=aicbicfile1)
+    aicbic2 = load_csv_str(datafile=aicbicfile2)
+    aicbic3 = load_csv_str(datafile=aicbicfile3)
+    aicbic4 = load_csv_str(datafile=aicbicfile4)
+    # ---- Plot in log scale
+    bars1 = signedlog([float(i) for i in column(aicbic1, 1)])
+    bars2 = signedlog([float(i) for i in column(aicbic2, 1)])
+    bars3 = signedlog([float(i) for i in column(aicbic3, 1)])
+    bars4 = signedlog([float(i) for i in column(aicbic4, 1)])
+    xticks = column(aicbic1, 0)
+    bar_width = 0.2
+    # The x position of bars
+    r1 = np.arange(len(bars1))
+    r2 = [x + bar_width for x in r1]
+    r3 = [x + 2*bar_width for x in r1]
+    r4 = [x + 3*bar_width for x in r1]
+    fig, ax = plt.subplots()
+    ax.bar(r1, bars1, width=bar_width, color='springgreen', hatch="////", lw=1,  edgecolor='#003300', capsize=7, label=pcaptitle1)
+    ax.bar(r2, bars2, width=bar_width, color='fuchsia', hatch="\\\\\\\\",  lw=1, edgecolor='#660066', capsize=7, label=pcaptitle2)
+    ax.bar(r3, bars3, width=bar_width, color='mediumblue', hatch="----", lw=1, edgecolor='#000066', capsize=7, label=pcaptitle3)
+    ax.bar(r4, bars4, width=bar_width, color='gold', hatch="xxxx",  lw=1, edgecolor='#666600', capsize=7, label=pcaptitle4)
+    plt.xticks([r + bar_width for r in range(len(bars1))], xticks, rotation=45)
+    plt.ylabel('(Aic/|Aic|)*ln|Aic|')
+    plt.xlabel('model')
+    plt.title(title_sumary)
+    plt.legend()
+    plt.tight_layout()
+    plt.grid(color='black', linestyle=':', axis='y')
+    saver_helper(fig, file_name=plotfile_sumary)
+    plt_free()
+    # ---- Plot the order for each pcap
+    aicbic1 = column(order_matrix(aicbic1, 1), 0)
+    aicbic2 = column(order_matrix(aicbic2, 1), 0)
+    aicbic3 = column(order_matrix(aicbic3, 1), 0)
+    aicbic4 = column(order_matrix(aicbic4, 1), 0)
+    aicbicorder1 = order_matrix_str([[aicbic1[i], i + 1] for i in range(0, len(aicbic1))], 0)
+    aicbicorder2 = order_matrix_str([[aicbic2[i], i + 1] for i in range(0, len(aicbic2))], 0)
+    aicbicorder3 = order_matrix_str([[aicbic3[i], i + 1] for i in range(0, len(aicbic3))], 0)
+    aicbicorder4 = order_matrix_str([[aicbic4[i], i + 1] for i in range(0, len(aicbic4))], 0)
+    bars1 = [float(i) for i in column(aicbicorder1, 1)]
+    bars2 = [float(i) for i in column(aicbicorder2, 1)]
+    bars3 = [float(i) for i in column(aicbicorder3, 1)]
+    bars4 = [float(i) for i in column(aicbicorder4, 1)]
+    xticks = column(aicbicorder1, 0)
+    bar_width = 0.2
+    # The x position of bars
+    r1 = np.arange(len(bars1))
+    r2 = [x + bar_width for x in r1]
+    r3 = [x + 2*bar_width for x in r1]
+    r4 = [x + 3*bar_width for x in r1]
+    fig, ax = plt.subplots()
+    ax.bar(r1, bars1, width=bar_width, color='springgreen', hatch="////", lw=1,  edgecolor='#003300', capsize=7, label=pcaptitle1)
+    ax.bar(r2, bars2, width=bar_width, color='fuchsia', hatch="\\\\\\\\",  lw=1, edgecolor='#660066', capsize=7, label=pcaptitle2)
+    ax.bar(r3, bars3, width=bar_width, color='mediumblue', hatch="----", lw=1, edgecolor='#000066', capsize=7, label=pcaptitle3)
+    ax.bar(r4, bars4, width=bar_width, color='gold', hatch="xxxx",  lw=1, edgecolor='#666600', capsize=7, label=pcaptitle4)
+    plt.xticks([r + bar_width for r in range(len(bars1))], xticks, rotation=45)
+    plt.ylabel('AIC and BIC ranking')
+    plt.title(title_order)
+    plt.legend()
+    plt.grid(color='black', linestyle=':', axis='y')
+    plt.tight_layout()
+    saver_helper(fig, file_name=plotfile_order)
+    plt_free()
+
+########################################################################################################################
+# Plot scripts
+########################################################################################################################
 
 def dataprocessor_simulation_plot(plot_dir):
     """
@@ -962,95 +978,9 @@ def dataprocessor_simulation_plot(plot_dir):
     plot_cost_function(PLOT_DIR, 'costFunction.dat', 'Cost Function', 'costFunction')
 
 
-def plot_aic_bic(aicbicfile1, pcaptitle1, aicbicfile2, pcaptitle2,
-                 aicbicfile3, pcaptitle3, aicbicfile4, pcaptitle4,
-                 title_sumary, plotfile_sumary, title_order, plotfile_order):
-    """
-    :param aicbicfile1:
-    :param pcaptitle1:
-    :param aicbicfile2:
-    :param pcaptitle2:
-    :param aicbicfile3:
-    :param pcaptitle3:
-    :param aicbicfile4:
-    :param pcaptitle4:
-    :param title_sumary:
-    :param plotfile_sumary:
-    :param title_order:
-    :param plotfile_order:
-    :return:
-    """
-    aicbic1 = load_csv_str(datafile=aicbicfile1)
-    aicbic2 = load_csv_str(datafile=aicbicfile2)
-    aicbic3 = load_csv_str(datafile=aicbicfile3)
-    aicbic4 = load_csv_str(datafile=aicbicfile4)
-    # ---- Plot in log scale
-    bars1 = signedlog([float(i) for i in column(aicbic1, 1)])
-    bars2 = signedlog([float(i) for i in column(aicbic2, 1)])
-    bars3 = signedlog([float(i) for i in column(aicbic3, 1)])
-    bars4 = signedlog([float(i) for i in column(aicbic4, 1)])
-    xticks = column(aicbic1, 0)
-    bar_width = 0.2
-    # The x position of bars
-    r1 = np.arange(len(bars1))
-    r2 = [x + bar_width for x in r1]
-    r3 = [x + 2*bar_width for x in r1]
-    r4 = [x + 3*bar_width for x in r1]
-    fig, ax = plt.subplots()
-    # Create blue bars
-    ax.bar(r1, bars1, width=bar_width, color='springgreen', edgecolor='black', capsize=7, label=pcaptitle1)
-    # Create cyan bars
-    ax.bar(r2, bars2, width=bar_width, color='fuchsia', edgecolor='black', capsize=7, label=pcaptitle2)
-    ax.bar(r3, bars3, width=bar_width, color='mediumblue', edgecolor='black', capsize=7, label=pcaptitle3)
-    ax.bar(r4, bars4, width=bar_width, color='gold', edgecolor='black', capsize=7, label=pcaptitle4)
-    plt.xticks([r + bar_width for r in range(len(bars1))], xticks, rotation=45)
-    plt.ylabel('(Aic/|Aic|)*ln|Aic|')
-    plt.xlabel('model')
-    plt.title(title_sumary)
-    plt.legend()
-    plt.tight_layout()
-    plt.grid(color='black', linestyle=':', axis='y')
-    saver_helper(fig, file_name=plotfile_sumary)
-    plt_free()
-    # ---- Plot the order for each pcap
-    aicbic1 = column(order_matrix(aicbic1, 1), 0)
-    aicbic2 = column(order_matrix(aicbic2, 1), 0)
-    aicbic3 = column(order_matrix(aicbic3, 1), 0)
-    aicbic4 = column(order_matrix(aicbic4, 1), 0)
-    aicbicorder1 = order_matrix_str([[aicbic1[i], i + 1] for i in range(0, len(aicbic1))], 0)
-    aicbicorder2 = order_matrix_str([[aicbic2[i], i + 1] for i in range(0, len(aicbic2))], 0)
-    aicbicorder3 = order_matrix_str([[aicbic3[i], i + 1] for i in range(0, len(aicbic3))], 0)
-    aicbicorder4 = order_matrix_str([[aicbic4[i], i + 1] for i in range(0, len(aicbic4))], 0)
-    bars1 = [float(i) for i in column(aicbicorder1, 1)]
-    bars2 = [float(i) for i in column(aicbicorder2, 1)]
-    bars3 = [float(i) for i in column(aicbicorder3, 1)]
-    bars4 = [float(i) for i in column(aicbicorder4, 1)]
-    xticks = column(aicbicorder1, 0)
-    bar_width = 0.2
-    # The x position of bars
-    r1 = np.arange(len(bars1))
-    r2 = [x + bar_width for x in r1]
-    r3 = [x + 2*bar_width for x in r1]
-    r4 = [x + 3*bar_width for x in r1]
-    fig, ax = plt.subplots()
-    # Create blue bars
-    ax.bar(r1, bars1, width=bar_width, color='springgreen', edgecolor='black', capsize=7, label=pcaptitle1)
-    # Create cyan bars
-    ax.bar(r2, bars2, width=bar_width, color='fuchsia', edgecolor='black', capsize=7, label=pcaptitle2)
-    ax.bar(r3, bars3, width=bar_width, color='mediumblue', edgecolor='black', capsize=7, label=pcaptitle3)
-    ax.bar(r4, bars4, width=bar_width, color='gold', edgecolor='black', capsize=7, label=pcaptitle4)
-    plt.xticks([r + bar_width for r in range(len(bars1))], xticks, rotation=45)
-    plt.ylabel('AIC and BIC order')
-    plt.title(title_order)
-    plt.legend()
-    plt.tight_layout()
-    saver_helper(fig, file_name=plotfile_order)
-    plt_free()
-
-
 def paper_aicbic_plots():
     """
-    #
+    Generate the plots for AIC/BIC paper
     """
     PLOT_DIR = "./plots/"
     os.system("mkdir -p "+PLOT_DIR+'paper/')
@@ -1093,54 +1023,6 @@ def paper_aicbic_plots():
                  title_order="AIC and BIC position", plotfile_order=PLOT_DIR+'paper/aic-bic-order')
 
 
-"""
-def run_test():
-    #:param plot_dir:
-    #:return:
-    PLOT_DIR = "./plots/"
-    title = "AIC and BIC values"
-    aicbic1 = load_csv_str(datafile=PLOT_DIR + "skype/Aic-Bic.dat.csv")
-    aicbic2 = load_csv_str(datafile=PLOT_DIR + "bigFlows/Aic-Bic.dat.csv")
-    aicbic3 = load_csv_str(datafile=PLOT_DIR + "lanDiurnal/Aic-Bic.dat.csv")
-    aicbic4 = load_csv_str(datafile=PLOT_DIR + "equinix-1s/Aic-Bic.dat.csv")
-    pcaptitle1 = "skype"
-    pcaptitle2 = "lan gateway"
-    pcaptitle3 = "lan firewall diurnal"
-    pcaptitle4 = "wan"
-    bars1 = signedlog([float(i) for i in column(aicbic1, 1)])
-    bars2 = signedlog([float(i) for i in column(aicbic2, 1)])
-    bars3 = signedlog([float(i) for i in column(aicbic3, 1)])
-    bars4 = signedlog([float(i) for i in column(aicbic4, 1)])
-    xticks = column(aicbic1, 0)
-    bar_width = 0.2
-    ylabel = 'AIC and BIC'
-    bar1label = pcaptitle1
-    bar2label = pcaptitle2
-    bar3label = pcaptitle3
-    bar4label = pcaptitle4
-    # The x position of bars
-    r1 = np.arange(len(bars1))
-    r2 = [x + bar_width for x in r1]
-    r3 = [x + 2*bar_width for x in r1]
-    r4 = [x + 3*bar_width for x in r1]
-    fig, ax = plt.subplots()
-    # Create blue bars
-    ax.bar(r1, bars1, width=bar_width, color='springgreen', edgecolor='black', capsize=7, label=bar1label)
-    # Create cyan bars
-    ax.bar(r2, bars2, width=bar_width, color='fuchsia', edgecolor='black', capsize=7, label=bar2label)
-    ax.bar(r3, bars3, width=bar_width, color='mediumblue', edgecolor='black', capsize=7, label=bar3label)
-    ax.bar(r4, bars4, width=bar_width, color='gold', edgecolor='black', capsize=7, label=bar4label)
-    plt.xticks([r + bar_width for r in range(len(bars1))], xticks, rotation=45)
-    plt.ylabel(ylabel)
-    plt.title(title)
-    plt.legend()
-    plt.tight_layout()
-    plt.grid(color='black', linestyle=':', axis='y')
-    saver_helper(fig, file_name=PLOT_DIR+"aic-plots-2")
-    plt_free()
-    print("run_test()")
-"""
-
 def help_menu():
     print("Usage: plot.py [OPTION] [DIRECTORY]")
     print("Create the plots for the simulations.")
@@ -1158,6 +1040,9 @@ def help_menu():
     print("                 ./plots.py --paper")
     print("")
 
+########################################################################################################################
+# Main
+########################################################################################################################
 
 if __name__ == "__main__":
     # arg parser
