@@ -6,6 +6,7 @@
     ```
     sudo apt install python3-pip
     python -mpip install -U pip
+    sudo apt-get install python3-matplotlib
     python -mpip install -U matplotlib
     sudo apt-get install python3-matplotlib
     ```

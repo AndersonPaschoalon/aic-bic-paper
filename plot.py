@@ -902,10 +902,10 @@ def dataprocessor_simulation_plot(plot_dir):
                      plot_title="Normal aproximation vs Original set",
                      plot_file="Normal aproximation vs Original set")
     # Pareto (LR)
-    plot_cdf_fitting(plot_dir=PLOT_DIR, fitting_data="Weibull aproximation vs Original set.dat",
+    plot_cdf_fitting(plot_dir=PLOT_DIR, fitting_data="Pareto aproximation (linear regression) vs Original set.dat",
                      original_datafile="Empirical CDF function.dat",
-                     plot_title="Weibull aproximation vs Original set",
-                     plot_file="Weibull aproximation vs Original set")
+                     plot_title="Pareto aproximation (linear regression) vs Original set",
+                     plot_file="Pareto aproximation (linear regression) vs Original set")
     # Pareto (MLH)
     plot_cdf_fitting(plot_dir=PLOT_DIR, fitting_data="Pareto aproximation (maximum likehood) vs Original set.dat",
                      original_datafile="Empirical CDF function.dat",
@@ -940,9 +940,9 @@ def dataprocessor_simulation_plot(plot_dir):
                       plot_title="Pareto: Linear Regression Cost History",
                       plot_file="Pareto - Cost J(iterations) convergence")
     # Cauchy
-    plot_linear_regression(plot_dir=PLOT_DIR, datafile="Pareto - Linearized data and linear fitting.dat",
-                           plot_title="Pareto: Linearized data and linear fitting",
-                           plot_file="Pareto - Linearized data and linear fitting.dat")
+    plot_linear_regression(plot_dir=PLOT_DIR, datafile="Cauchy - Linearized data and linear fitting.dat",
+                           plot_title="Cauchy: Linearized data and linear fitting",
+                           plot_file="Cauchy - Linearized data and linear fitting.dat")
     plot_cost_history(plot_dir=PLOT_DIR, datafile="Cauchy - Linearized data and linear fitting.dat",
                       plot_title="Cauchy: Linear Regression Cost History",
                       plot_file="Cauchy - Linearized data and linear fitting")
