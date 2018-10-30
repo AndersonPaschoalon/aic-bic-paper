@@ -32,8 +32,40 @@ function merge_files_gitignore
 	   filedir=$(sed "s/\/[^\/]*$/\//g" <<< ${line} | sed "s/\ /\\\ /g"); # directory
 	   filename=$(sed "s;${filedir};;g" <<< ${line});
 	   cat ./"${filedir}""part:""$filename""."* > "$filedirname"
+	done
+}
+
+function rm_files_gitignore
+{
+	read_file=${1};
+	echo "reading file: " ${read_file}
+	cat ${read_file}| while read line
+	do
+	   filedirname=${line} # file
+	   filedir=$(sed "s/\/[^\/]*$/\//g" <<< ${line} | sed "s/\ /\\\ /g"); # directory
+	   filename=$(sed "s;${filedir};;g" <<< ${line});
+	   echo "rm ./""${filedir}""part:""$filename"".*"
 	   rm ./"${filedir}""part:""$filename""."* 
 	done
+}
+
+function checkout_files_gitignore
+{
+	read_file=${1};
+	echo "reading file: " ${read_file}
+	cat ${read_file}| while read line
+	do
+	   filedirname=${line} # file
+	   filedir=$(sed "s/\/[^\/]*$/\//g" <<< ${line} | sed "s/\ /\\\ /g"); # directory
+	   filename=$(sed "s;${filedir};;g" <<< ${line});
+	   echo "git checkout ./""${filedir}""part:""$filename"".*"
+	   git checkout ./"${filedir}""part:""$filename""."* 
+	done
+}
+
+function print_version
+{
+	echo "version 0.1"
 }
 
 function help_menu
@@ -55,6 +87,12 @@ function main
 	elif [[ "$option" == "--setup" ]]; then
 		init_gitignore;
 		split_files_gitignore .gitignore;
+	elif [[ "$option" == "--rm" ]]; then
+		rm_files_gitignore .gitignore;
+	elif [[ "$option" == "--checkout" ]]; then
+		checkout_files_gitignore .gitignore;
+	elif [[ "$option" == "--version" ]]; then
+		print_version;
 	else
 		help_menu;
 	fi

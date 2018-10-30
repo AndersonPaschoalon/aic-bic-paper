@@ -9,7 +9,8 @@
 #./plots.py --simulation "./plots/skype/"
 
 
-
+# plot just cost history
+./plot.py --costhistory "./plots/skype/"
 
 
         
