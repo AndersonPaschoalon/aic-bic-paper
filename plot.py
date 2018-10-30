@@ -8,7 +8,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 import matplotlib
-matplotlib.use('pdf')
 
 ########################################################################################################################
 # Utils
@@ -943,8 +942,8 @@ def dataprocessor_simulation_plot(plot_dir):
     plot_linear_regression(plot_dir=PLOT_DIR, datafile="Cauchy - Linearized data and linear fitting.dat",
                            plot_title="Cauchy: Linearized data and linear fitting",
                            plot_file="Cauchy - Linearized data and linear fitting")
-    plot_cost_history(plot_dir=PLOT_DIR, datafile="Cauchy - Linearized data and linear fitting.dat",
-                      plot_title="Cauchy: Linear Regression Cost History",
+    plot_cost_history(plot_dir=PLOT_DIR, datafile="Cauchy - Cost J(iterations) convergence.dat",
+                      plot_title="Cauchy: Linearized data and linear fitting",
                       plot_file="Cauchy - Linearized data and linear fitting")
     # Plot QQplots
     print_header("Plot QQplots")
@@ -1023,7 +1022,7 @@ def paper_aicbic_plots():
                  title_order="AIC and BIC position", plotfile_order=PLOT_DIR+'paper/aic-bic-order')
 
 
-def plot_cost_history(plot_dir):
+def plot_sim_cost_history(plot_dir):
     plot_cost_history(plot_dir=plot_dir, datafile="Weibull - Cost J(iterations) convergence.dat",
                       plot_title="Weibull: Linear Regression Cost History",
                       plot_file="Weibull - Cost J(iterations) convergence")
@@ -1033,10 +1032,14 @@ def plot_cost_history(plot_dir):
     plot_cost_history(plot_dir=plot_dir, datafile="Pareto - Cost J(iterations) convergence.dat",
                       plot_title="Pareto: Linear Regression Cost History",
                       plot_file="Pareto - Cost J(iterations) convergence")
-    plot_cost_history(plot_dir=plot_dir, datafile="Cauchy - Linearized data and linear fitting.dat",
-                      plot_title="Cauchy: Linear Regression Cost History",
-                      plot_file="Cauchy - Linearized data and linear fitting")
+    plot_cost_history(plot_dir=plot_dir, datafile="Cauchy - Cost J(iterations) convergence.dat",
+                      plot_title="Cauchy - Cost J(iterations) convergence",
+                      plot_file="Cauchy - Cost J(iterations) convergence")
 
+def plot_cauchy_linear_regression(plot_dir):
+    plot_linear_regression(plot_dir=plot_dir, datafile="Cauchy - Linearized data and linear fitting.dat",
+                           plot_title="Cauchy - Linearized data and linear fitting",
+                           plot_file="Cauchy - Linearized data and linear fitting")
 
 
 def help_menu():
@@ -1068,6 +1071,7 @@ if __name__ == "__main__":
                         help="run sumarry plots for 4 the 4 experiments used on the paper..",
                         required=False)
     parser.add_argument("--costhistory", type=str, nargs="+", help="costhistory", required=False)
+    parser.add_argument("--cauchy", type=str, nargs="+", help="costhistory", required=False)
     parser.add_argument("--man", action='store_true', help="Manual", required=False)
 
     args = vars(parser.parse_args()) # convert parser object to a dictionary
@@ -1080,7 +1084,10 @@ if __name__ == "__main__":
         paper_aicbic_plots()
     elif args["costhistory"]:
         # ./plots.py --costhistory "./plots/skype/"
-        plot_cost_history(args.get("costhistory")[0])
+        plot_sim_cost_history(args.get("costhistory")[0])
+    elif args["cauchy"]:
+        # ./plots.py --costhistory "./plots/skype/"
+        plot_cauchy_linear_regression(args.get("cauchy")[0])
     elif args["man"]:
         # ./plots.py --help
         help_menu()
