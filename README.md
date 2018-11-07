@@ -50,8 +50,24 @@ After running these commands, a directory on home called .config/octave will app
     ```
 
 ---
+## Pcap Files
 
-## Structure
+https://github.com/AndersonPaschoalon/Pcaps
+
+
+---
+## Setup
+
+
+
+---
+## Quick Tutorial
+
+
+
+---
+
+## File Structure
 
 This set of scripts perform a set of simulations  over actual pcap inter-packet times to fit stochatic models, and avaluate  wich perform the best fitting, and compare with AIC and BIC. Details on run, use `--help` as scripts arguments for details on the run.
 
