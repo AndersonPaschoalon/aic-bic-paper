@@ -16,41 +16,39 @@ Sumary:
 To run these scripts, the follow dependencies are required:
 
 ### Python
-
-    ```bash
-    sudo apt install python3-pip
-    sudo apt-get install python3-matplotlib
-    ```
+```bash
+sudo apt install python3-pip
+sudo apt-get install python3-matplotlib
+```
 
 ### Octave
-
 To install and setup octave, use the follow commands:
-    ```bash
-    # add repository
-    sudo add-apt-repository ppa:octave/stable
-    sudo apt-get update
-    # install Octave
-    sudo apt-get install octave
-    sudo apt-get install liboctave-dev
-    # other packages dependencies
-    sudo apt-get install gnuplot epstool transfig pstoedit
-    ```
+```bash
+# add repository
+sudo add-apt-repository ppa:octave/stable
+sudo apt-get update
+# install Octave
+sudo apt-get install octave
+sudo apt-get install liboctave-dev
+# other packages dependencies
+sudo apt-get install gnuplot epstool transfig pstoedit
+```
 
 Install statistic packeges on Octave to run the simulations. Run the follow command to start Octave CLI:
-    ```bash
-    octave-cli
-    ```
+```bash
+octave-cli
+```
 
 Inside Octave CLI, run the folloe commands:
-    ```command
-    octave> pkg -forge install io
-    octave> pkg -forge install statistics
-    ```
+```command
+octave> pkg -forge install io
+octave> pkg -forge install statistics
+```
 
 After running these commands, a directory on home called .config/octave will appear. But it may have some ownership/access problems. To solve it, run this command on Shell terminal:
-    ```bash
-    sudo chown $USER ~/.config/octave/qt-settings
-    ```
+```bash
+sudo chown $USER ~/.config/octave/qt-settings
+```
 
 ---
 ## Setup Enviroment
@@ -58,34 +56,33 @@ After running these commands, a directory on home called .config/octave will app
 ### Setup
 
 First, start clonning this repository:
-    ```bash
-    git clone https://github.com/AndersonPaschoalon/aic-bic-paper
-    ```
+```bash
+git clone https://github.com/AndersonPaschoalon/aic-bic-paper
+```
 To donwload the pcap files used in the paper, clone the follow repository on the root directory of this project
-	```bash
-	git clone https://github.com/AndersonPaschoalon/Pcaps
-	```
+```bash
+git clone https://github.com/AndersonPaschoalon/Pcaps
+```
 So the structure will be like:
-
-    __aic-bic-paper/__ : root directory
-    ├── __Cd/__ : python package used by the scripts
-    ├── __dataProcessor/__ : octave, shell and python scripts
-    ├── exec.sh : simulation commands
-    ├── git-setup.sh : split/merge large files script
-    ├── __Pcap/__ : pcap files directory
-    ├── plot.py : plot script
-    ├── __plots/__ : directory where the plots are placed
-    ├── README.md : this readme file
-    ├── run.py : script for automating the simulations
+__aic-bic-paper/__ : root directory
+	├── __Cd/__ : python package used by the scripts
+	├── __dataProcessor/__ : octave, shell and python scripts
+	├── exec.sh : simulation commands
+	├── git-setup.sh : split/merge large files script
+	├── __Pcap/__ : pcap files directory
+	├── plot.py : plot script
+	├── __plots/__ : directory where the plots are placed
+	├── README.md : this readme file
+	├── run.py : script for automating the simulations
 
 To generate the pcap files:
-	```bash
-	./git-setup.sh --merge
-	```
+```bash
+./git-setup.sh --merge
+```
 After that, to clean-up the local repository (excludign part files), you may execute:
-	```bash
-	./git-setup.sh --rm
-	```
+```bash
+./git-setup.sh --rm
+```
 ### Runing
 
 To run the simulations, use run.py. This is a script to automate and simplify the script execution, maintaining the consistency, without having to know inner details.
@@ -116,15 +113,10 @@ The command `./plot.py --paper` will also create some aditional plots for the pa
 ## Repository files documentation
 
 This set of scripts perform a set of simulations  over actual pcap inter-packet times to fit stochatic models, and avaluate  wich perform the best fitting, and compare with AIC and BIC. Details on run, use `--help` as scripts arguments for details on the run.
-
 ---
-Shell Script files: 
-
 - __pcap-filter.sh__ : extract inter packet times from pcaps
     + _timerelative2timedelta.m_: script used by pcap filter
-
 ---
-Octave scripts:
 
 - __dataProcessor.m__: run simulations and stores the data on data/ directory
     + _adiff.m_: calc the absolute difference 
@@ -148,7 +140,6 @@ Octave scripts:
     + __data/__: place where dataProcessor.m saves the generated data
     + __figures/__: figures plotted by dataProcessor
 ---
-Python scripts:
 - __calcCostFunction.py__: aux script, this script calcs the cost function for the simulated data and saves in the file costFunction.dat.
 ---
 - __Not used files__:
