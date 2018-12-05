@@ -110,10 +110,10 @@ The command `./plot.py --paper` will also create some aditional plots for the pa
 
 ---
 
-## Repository files documentation 
+## Files documentation
 
-
-This set of scripts perform a set of simulations  over actual pcap inter-packet times to fit stochatic models, and avaluate  wich perform the best fitting, and compare with AIC and BIC. Details on run, use `--help` as scripts arguments for details on the run.  
+### dataProcessor
+These are the set of scripts located at the dataProcessor directory, used by the run.py script.  
 - __pcap-filter.sh__ : extract inter packet times from pcaps  
     ├── _timerelative2timedelta.m_: script used by pcap filter  
 - __dataProcessor.m__: run simulations and stores the data on data/ directory  
