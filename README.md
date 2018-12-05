@@ -113,12 +113,9 @@ The command `./plot.py --paper` will also create some aditional plots for the pa
 ## Repository files documentation 
 
 
-This set of scripts perform a set of simulations  over actual pcap inter-packet times to fit stochatic models, and avaluate  wich perform the best fitting, and compare with AIC and BIC. Details on run, use `--help` as scripts arguments for details on the run.
----
-- __pcap-filter.sh__ : extract inter packet times from pcaps
-    + _timerelative2timedelta.m_: script used by pcap filter
----
-├── 
+This set of scripts perform a set of simulations  over actual pcap inter-packet times to fit stochatic models, and avaluate  wich perform the best fitting, and compare with AIC and BIC. Details on run, use `--help` as scripts arguments for details on the run.  
+- __pcap-filter.sh__ : extract inter packet times from pcaps  
+    ├── _timerelative2timedelta.m_: script used by pcap filter  
 - __dataProcessor.m__: run simulations and stores the data on data/ directory  
     ├── _adiff.m_: calc the absolute difference   
     ├── _cdfCauchyPlot.m_: create the values of a Cauchy CDF  distribution, and plot in a figure  
@@ -140,9 +137,7 @@ This set of scripts perform a set of simulations  over actual pcap inter-packet 
     ├── _sff2File.m_: vector to file  
     ├── __data/__: place where dataProcessor.m saves the generated data  
     ├── __figures/__: figures plotted by dataProcessor  
----
-- __calcCostFunction.py__: aux script, this script calcs the cost function for the simulated data and saves in the file costFunction.dat.
----
+- __calcCostFunction.py__: aux script, this script calcs the cost function for the simulated data and saves in the file costFunction.dat.  
 - __Not used files__:
     - _2matrix2File.m_
     - _calcCostFunction2.py_: test version of calcCostFunction.py
