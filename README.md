@@ -59,21 +59,21 @@ First, start clonning this repository:
 ```bash
 git clone https://github.com/AndersonPaschoalon/aic-bic-paper
 ```
-To donwload the pcap files used in the paper, clone the follow repository on the root directory of this project
+To donwload the pcap files used in the paper, clone the follow repository on the root directory of this project:
 ```bash
 git clone https://github.com/AndersonPaschoalon/Pcaps
 ```
-So the structure will be like:
-__aic-bic-paper/__ : root directory
-	├── __Cd/__ : python package used by the scripts
-	├── __dataProcessor/__ : octave, shell and python scripts
-	├── exec.sh : simulation commands
-	├── git-setup.sh : split/merge large files script
-	├── __Pcap/__ : pcap files directory
-	├── plot.py : plot script
-	├── __plots/__ : directory where the plots are placed
-	├── README.md : this readme file
-	├── run.py : script for automating the simulations
+So the structure will be like:  
+├── __aic-bic-paper/__ : root directory  
+├── __Cd/__ : python package used by the scripts  
+├── __dataProcessor/__ : octave, shell and python scripts  
+├── exec.sh : simulation commands  
+├── git-setup.sh : split/merge large files script  
+├── __Pcap/__ : pcap files directory  
+├── plot.py : plot script  
+├── __plots/__ : directory where the plots are placed  
+├── README.md : this readme file  
+├── run.py : script for automating the simulations 
 
 To generate the pcap files:
 ```bash
@@ -110,35 +110,36 @@ The command `./plot.py --paper` will also create some aditional plots for the pa
 
 ---
 
-## Repository files documentation
+## Repository files documentation 
+
 
 This set of scripts perform a set of simulations  over actual pcap inter-packet times to fit stochatic models, and avaluate  wich perform the best fitting, and compare with AIC and BIC. Details on run, use `--help` as scripts arguments for details on the run.
 ---
 - __pcap-filter.sh__ : extract inter packet times from pcaps
     + _timerelative2timedelta.m_: script used by pcap filter
 ---
-
-- __dataProcessor.m__: run simulations and stores the data on data/ directory
-    + _adiff.m_: calc the absolute difference 
-    + _cdfCauchyPlot.m_: create the values of a Cauchy CDF  distribution, and plot in a figure
-    + _cdfExponentialPlot.m_: create the values of a Exponential CDF  distribution, and plot in a figure
-    + _cdfNormalPlot.m_: create the values of a Normal CDF  distribution, and plot in a figure
-    + _cdfWeibullPlot.m_: create the values of a Weibull CDF  distribution, and plot in a figure
-    + _cdfParetoPlot.m_: create the values of a Pareto CDF  distribution, and plot in a figure
-    + _cdfplot.m_: create the values of a Cauchy CDF  distribution, and plot in a figure
-    + _computeCost.m_: compute cost for linear regression
-    + _cumulativeData.m_: acumulates a vector
-    + _gradientDescent.m_: gradient descendent algorithm
-    + _informationCriterion.m_:
-    + _likehood\_log.m_:
-    + _matrix2File.m_: save matrix into a text file
-    + _empiricalCdf.m_: eval empirical CDF
-    + _plotData.m_: wrapper for plot x and y data
-    + _qqPlot.m_: wrapper for qqplots on octave wraper
-    + _setxlabels.m_: set x tick labels on axis on figures
-    + _sff2File.m_: vector to file
-    + __data/__: place where dataProcessor.m saves the generated data
-    + __figures/__: figures plotted by dataProcessor
+├── 
+- __dataProcessor.m__: run simulations and stores the data on data/ directory  
+    ├── _adiff.m_: calc the absolute difference   
+    ├── _cdfCauchyPlot.m_: create the values of a Cauchy CDF  distribution, and plot in a figure  
+    ├── _cdfExponentialPlot.m_: create the values of a Exponential CDF  distribution, and plot in a figure  
+    ├── _cdfNormalPlot.m_: create the values of a Normal CDF  distribution, and plot in a figure  
+    ├── _cdfWeibullPlot.m_: create the values of a Weibull CDF  distribution, and plot in a figure  
+    ├── _cdfParetoPlot.m_: create the values of a Pareto CDF  distribution, and plot in a figure  
+    ├── _cdfplot.m_: create the values of a Cauchy CDF  distribution, and plot in a figure  
+    ├── _computeCost.m_: compute cost for linear regression  
+    ├── _cumulativeData.m_: acumulates a vector  
+    ├── _gradientDescent.m_: gradient descendent algorithm  
+    ├── _informationCriterion.m_:  
+    ├── _likehood\_log.m_:  
+    ├── _matrix2File.m_: save matrix into a text file  
+    ├── _empiricalCdf.m_: eval empirical CDF  
+    ├── _plotData.m_: wrapper for plot x and y data  
+    ├── _qqPlot.m_: wrapper for qqplots on octave wraper  
+    ├── _setxlabels.m_: set x tick labels on axis on figures  
+    ├── _sff2File.m_: vector to file  
+    ├── __data/__: place where dataProcessor.m saves the generated data  
+    ├── __figures/__: figures plotted by dataProcessor  
 ---
 - __calcCostFunction.py__: aux script, this script calcs the cost function for the simulated data and saves in the file costFunction.dat.
 ---
