@@ -1066,12 +1066,12 @@ def help_menu():
 if __name__ == "__main__":
     # arg parser
     parser = argparse.ArgumentParser(description='Run plotter for simulations or paper plots')
-    parser.add_argument("--simulation", type=str, nargs="+", help="run Pcap simulation plots", required=False)
+    parser.add_argument("--simulation", type=str, nargs="+", help="run Pcap simulation plots on the directory SIMULATION, using the data created by run.py.", required=False)
     parser.add_argument("--paper", action='store_true',
                         help="run sumarry plots for 4 the 4 experiments used on the paper..",
                         required=False)
-    parser.add_argument("--costhistory", type=str, nargs="+", help="costhistory", required=False)
-    parser.add_argument("--cauchy", type=str, nargs="+", help="costhistory", required=False)
+    #parser.add_argument("--costhistory", type=str, nargs="+", help="directory", required=False)
+    #parser.add_argument("--cauchy", type=str, nargs="+", help="directory", required=False)
     parser.add_argument("--man", action='store_true', help="Manual", required=False)
 
     args = vars(parser.parse_args()) # convert parser object to a dictionary
@@ -1082,12 +1082,12 @@ if __name__ == "__main__":
     elif args["paper"]:
         # ./plots.py --paper
         paper_aicbic_plots()
-    elif args["costhistory"]:
-        # ./plots.py --costhistory "./plots/skype/"
-        plot_sim_cost_history(args.get("costhistory")[0])
-    elif args["cauchy"]:
-        # ./plots.py --costhistory "./plots/skype/"
-        plot_cauchy_linear_regression(args.get("cauchy")[0])
+    #elif args["costhistory"]:
+    #    # ./plots.py --costhistory "./plots/skype/"
+    #    plot_sim_cost_history(args.get("costhistory")[0])
+    #elif args["cauchy"]:
+    #    # ./plots.py --costhistory "./plots/skype/"
+    #    plot_cauchy_linear_regression(args.get("cauchy")[0])
     elif args["man"]:
         # ./plots.py --help
         help_menu()

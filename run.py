@@ -61,9 +61,6 @@ def run_simulations(pcap_file, sym_name, plots_dir, cd):
     os.system('echo \"' + str_date + '\" >>' + plots_dir + '/about.log')
 
 
-
-
-
 if __name__ == "__main__":
     if (len(sys.argv) == 1) or (len(sys.argv) == 2):
         dataprocessor_help()
