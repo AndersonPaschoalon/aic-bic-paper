@@ -20,6 +20,7 @@ To run these scripts, the follow dependencies are required:
 sudo apt install python3-pip
 pip install -U matplotlib --user
 pip3 install numpy
+sudo apt-get install python3-tk
 ```
 
 ### Octave
