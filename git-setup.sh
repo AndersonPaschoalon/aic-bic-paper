@@ -13,7 +13,7 @@ function split_files_gitignore
 	echo "reading file: " ${read_file}
 	cat ${read_file}| while read line
 	do
-	   echo "splitting file >> " $line;
+	   echo "splitting file >> " ${line};
 	   filedirname=${line} # file
 	   filedir=$(sed "s/\/[^\/]*$/\//g" <<< ${line} | sed "s/\ /\\\ /g"); # directory
 	   filename=$(sed "s;${filedir};;g" <<< ${line}); 
@@ -27,7 +27,7 @@ function merge_files_gitignore
 	echo "reading file: " ${read_file}
 	cat ${read_file}| while read line
 	do
-	   echo "merging file >> " $line;
+	   echo "merging file >> " ${line};
 	   filedirname=${line} # file
 	   filedir=$(sed "s/\/[^\/]*$/\//g" <<< ${line} | sed "s/\ /\\\ /g"); # directory
 	   filename=$(sed "s;${filedir};;g" <<< ${line});
@@ -78,8 +78,8 @@ function help_menu
 	echo "you currently have. Git have a really annoying... \"feature\". If you commit a "
 	echo "larger than 100MB file, it will just say that you did, after it tries to pull it"
 	echo "and fail... and for a larger file, it takes a lot of time... If you have a lot"
-	echo "of files, it takes a LOT more, to just pull nothing. So you have all your"
-	echo "morning wasted(more)."
+	echo "of files, it takes a LOT more, to pull ~nothing~. So you have all your"
+	echo "morning wasted(or even more). Well.... not anymore!"
 	echo ""
 	echo ""
 	echo "  -- How to use it --"
@@ -115,12 +115,24 @@ function help_menu
 	echo "the --merge first, for example) just use --checkout to rollback from the last"
 	echo "commit:"
 	echo "$ ./git-setup.sh --checkout"
+	echo "    You may want to checkout, for exemple, executed a --rm by mistake."
+	echo "    Is better to NEVER execute a --rm just after you clonned your directory."
+	echo "    Is better to, just after you clonned it, execute a --setup. Than, you may "
+	echo "freely execute --rm, if the part files anoy you. You will be safe, since the"
+	echo "actual files are already on your repo, and you may retrive the parts executing"
+	echo "a --setup again. But we prepared a --checkout just in case."
 	echo "    If, for any reason you just want to generate the gitignore file, use:"
 	echo "$ ./git-setup.sh --init"
 	echo "    Also, if you just want to break the files listed on .gitignore into pieces, "
-	echo "but does not want to recreate it, use:"
+	echo "but does not want to recreate a new .gitignoreit, use:"
 	echo "$ ./git-setup.sh --split"
-	echo "    In fact, --setup just execut an --init and than a --split."
+	echo "    In fact, --setup just execut an --init and than a --split.. That means:"
+	echo "$ ./git-setup.sh --setup"
+	echo "    Is equivalent to:"
+	echo "$ ./git-setup.sh --init"
+	echo "$ ./git-setup.sh --split"
+	echo "    Since (probably) there is no much reasons to execute a --init and than a "
+	echo "is better to just --setup."
 	echo "    To display this help menu, use:"
 	echo "$ ./git-setup.sh --help"
 	echo "    Finally, to show the script version:"
