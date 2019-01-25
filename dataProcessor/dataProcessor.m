@@ -64,25 +64,26 @@ interArrival2 = interArrivalTemp(2:2:end);
 % both vectors mus have the seme length
 [INTER_ARRIVAL_DATASET INTER_ARRIVAL_CROSVAL] = sameLength(interArrival1, interArrival2);
 INTER_ARRIVAL_CROSVAL_SORTED = sort(INTER_ARRIVAL_CROSVAL);
+MAX_TIME = max(INTER_ARRIVAL_DATASET);
+INTER_ARRIVAL_CDF = empiricalCdf(INTER_ARRIVAL_DATASET);
+m = length(INTER_ARRIVAL_DATASET);
 interArrival1 = [];
 interArrival2 = [];
-
+interArrivalCdf = [];
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Run
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-MAX_TIME = max(INTER_ARRIVAL_DATASET);
-interArrivalCdf = empiricalCdf(INTER_ARRIVAL_DATASET);
-m = length(INTER_ARRIVAL_DATASET);
+
 
 %plot empirical Cumulative distribution function
 fprintf('Ploting INTER_ARRIVAL_DATASET cumulative distribution\n');
-plotData(INTER_ARRIVAL_DATASET, interArrivalCdf, 'INTER_ARRIVAL_DATASET', 'F(INTER_ARRIVAL_DATASET)', 'b-', 'Inter arrival empirical CDF');
+plotData(INTER_ARRIVAL_DATASET, INTER_ARRIVAL_CDF, 'INTER_ARRIVAL_DATASET', 'F(INTER_ARRIVAL_DATASET)', 'b-', 'Inter arrival empirical CDF');
 saveas(gca , 'figures/Inter-arrival empirical CDF.png');
 title = 'Empirical CDF function';
-labels = 'INTER_ARRIVAL_DATASET(x), interArrivalCdf(y)';
+labels = 'INTER_ARRIVAL_DATASET(x), INTER_ARRIVAL_CDF(y)';
 filename = strcat(PLOT_DIR, title, PLOT_DATA_EXT);
-matrix2File([INTER_ARRIVAL_DATASET interArrivalCdf], filename, title, labels);
+matrix2File([INTER_ARRIVAL_DATASET INTER_ARRIVAL_CDF], filename, title, labels);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Weibull fitting
@@ -91,8 +92,8 @@ if(WEIBULL_FITTING != 0)
     fprintf('\n*********************\nWeibull data fitting\n*********************\n');
     %linearized data
     fprintf('Data linearization plot\n');
-    %y = log(-log(1.00 - interArrivalCdf));
-    y = log(-log(1.00 - interArrivalCdf));
+    %y = log(-log(1.00 - INTER_ARRIVAL_CDF));
+    y = log(-log(1.00 - INTER_ARRIVAL_CDF));
     x = log(INTER_ARRIVAL_DATASET);
     figure; %new figure
     plotData(x, y, 'x', 'y', 'b-+', 'Linearized data and linear fitting');
@@ -130,7 +131,7 @@ if(WEIBULL_FITTING != 0)
     cdfW_temp = real(cdfWeibullPlot(weibull_alpha, weibull_betha, MAX_TIME, 'Weibull aproximation vs Original set'));
     cdfW = real(cdfW_temp);
     hold on;
-    plot(INTER_ARRIVAL_DATASET, interArrivalCdf, '-r');
+    plot(INTER_ARRIVAL_DATASET, INTER_ARRIVAL_CDF, '-r');
     legend('aproximation', 'original', 'Location','southeast'  ,'Orientation','vertical');
     saveas(gca , 'figures/Weibull aproximation vs Original set.png');
     hold off;
@@ -161,7 +162,7 @@ if(NORMAL_FITTING != 0)
     % Plot original data and aproximation fitting
     cdfN = cdfNormalPlot(normal_mean, normal_std, MAX_TIME, 'Normal aproximation vs Original set' );
     hold on;
-    plot(INTER_ARRIVAL_DATASET, interArrivalCdf, '-r');
+    plot(INTER_ARRIVAL_DATASET, INTER_ARRIVAL_CDF, '-r');
     saveas(gca, 'figures/Normal aproximation vs Original set.png');
     legend('aproximation', 'original', 'Location','southeast'  ,'Orientation','vertical')
     hold off;
@@ -178,7 +179,7 @@ if(EXPONENTIAL_FITTING != 0)
     fprintf('\n*********************\nExponential data fitting 1: Linear Regression\n*********************\n');
     %linearized data
     fprintf('Data linearization plot\n');
-    y = log(1.00 - interArrivalCdf);
+    y = log(1.00 - INTER_ARRIVAL_CDF);
     x = INTER_ARRIVAL_DATASET;
     figure; %new figure
     plotData(x, y, 'x', 'y', 'b-+', 'Linearized data and linear fitting');
@@ -213,7 +214,7 @@ if(EXPONENTIAL_FITTING != 0)
     % Plot original data and aproximation fitting
     cdfElr = cdfExponentialPlot(exp_lambda, MAX_TIME,'Exponential aproximation (LR) vs Original set');
     hold on;
-    plot(INTER_ARRIVAL_DATASET, interArrivalCdf, '-r');
+    plot(INTER_ARRIVAL_DATASET, INTER_ARRIVAL_CDF, '-r');
     saveas(gca , 'figures/Exponential aproximation (LR) vs Original set.png');
     legend('aproximation', 'original', 'Location','southeast'  ,'Orientation','vertical')
     hold off;
@@ -249,7 +250,7 @@ if(EXPONENTIAL_FITTING != 0)
     % Plot original data and aproximation fitting
     cdfEme = cdfExponentialPlot(exp_lambdaMean, MAX_TIME,'Exponential aproximation (mean) vs Original set');
     hold on;
-    plot(INTER_ARRIVAL_DATASET, interArrivalCdf, '-r');
+    plot(INTER_ARRIVAL_DATASET, INTER_ARRIVAL_CDF, '-r');
     saveas(gca , 'figures/Exponential aproximation (mean) vs Original set.png');
     legend('aproximation', 'original', 'Location','southeast'  ,'Orientation','vertical');
     hold off;
@@ -268,7 +269,7 @@ if(PARETO_FITTING != 0)
     fprintf('\n*********************\nPareto data fitting 1: Linear regression LR\n*********************\n');
     %linearized data
     fprintf('Data linearization plot\n');
-    y = log(1.00 - interArrivalCdf);
+    y = log(1.00 - INTER_ARRIVAL_CDF);
     x = log(INTER_ARRIVAL_DATASET);
     figure; %new figure
     plotData(x, y, 'x', 'y', 'b-+', 'Linearized data and linear fitting');
@@ -310,7 +311,7 @@ if(PARETO_FITTING != 0)
     % Plot original data and aproximation fitting
     cdfPlr = cdfParetoPlot(pareto_alpha, pareto_xm, MAX_TIME,'Pareto aproximation LR vs Original set');
     hold on;
-    plot(INTER_ARRIVAL_DATASET, interArrivalCdf, '-r');
+    plot(INTER_ARRIVAL_DATASET, INTER_ARRIVAL_CDF, '-r');
     legend('aproximation', 'original', 'Location','southeast'  ,'Orientation','vertical');
     saveas(gca , 'figures/Pareto aproximation LR vs Original set.png');
     hold off;
@@ -351,7 +352,7 @@ if(PARETO_FITTING != 0)
     % Plot original data and aproximation fitting
     cdfPml = cdfParetoPlot(pareto_mlh_alpha,  pareto_mlh_xm, MAX_TIME,'Pareto MLH aproximation vs Original set');
     hold on;
-    plot(interArrival1, interArrivalCdf, '-r');
+    plot(INTER_ARRIVAL_DATASET, INTER_ARRIVAL_CDF, '-r');
     legend('aproximation', 'original', 'Location','southeast'  ,'Orientation','vertical');
     saveas(gca , 'figures/Pareto MLH aproximation vs Original set.png');
     hold off;
@@ -370,7 +371,7 @@ if(CAUCHY_FITTING != 0)
     fprintf('\n*********************\nCauchy data fitting\n*********************\n');
     fprintf('Data linearization plot\n');
 
-	interArrivalCdfCauchy = interArrivalCdf;
+	interArrivalCdfCauchy = INTER_ARRIVAL_CDF;
 	interArrivalCdfCauchy(interArrivalCdfCauchy > ALMOST_ONE) = ALMOST_ONE;
 	interArrivalCdfCauchy(interArrivalCdfCauchy < ALMOST_ZERO) = ALMOST_ZERO;
 	y = tan(pi*(interArrivalCdfCauchy - 0.5));
@@ -408,7 +409,7 @@ if(CAUCHY_FITTING != 0)
     % Plot original data and aproximation fitting
     cdfC = cdfCauchyPlot(cauchy_gamma, cauchy_x0, MAX_TIME,'Cauchy aproximation vs Original set');
     hold on;
-    plot(INTER_ARRIVAL_DATASET, interArrivalCdf, '-r');
+    plot(INTER_ARRIVAL_DATASET, INTER_ARRIVAL_CDF, '-r');
     legend('aproximation', 'original', 'Location','southeast'  ,'Orientation','vertical');
     saveas(gca , 'figures/Cauchy aproximation vs Original set.png');
     hold off;
