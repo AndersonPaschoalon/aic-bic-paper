@@ -57,7 +57,7 @@ fprintf('Preparing Inter-arrival values...');
 INTER_ARRIVAL_RAW = load(DATAFILE_NAME);
 MAX_INTER_ARRIVAL = max(INTER_ARRIVAL_RAW);
 interArrivalTemp = INTER_ARRIVAL_RAW;
-interArrivalTemp(interArrivalTemp == 0) =  MIN_TIME;
+interArrivalTemp(interArrivalTemp < MIN_TIME) =  MIN_TIME;
 interArrivalTemp = interArrivalTemp*SCALE;
 interArrival1 = sort(interArrivalTemp(1:2:end));
 interArrival2 = interArrivalTemp(2:2:end);
@@ -70,6 +70,19 @@ m = length(INTER_ARRIVAL_DATASET);
 interArrival1 = [];
 interArrival2 = [];
 interArrivalCdf = [];
+
+INTER_ARRIVAL_RAW(1:30)
+INTER_ARRIVAL_DATASET(1:30)
+INTER_ARRIVAL_CROSVAL(1:30)
+INTER_ARRIVAL_CROSVAL_SORTED(1:30)
+MAX_INTER_ARRIVAL
+MAX_TIME
+m
+length(INTER_ARRIVAL_RAW)
+length(INTER_ARRIVAL_DATASET)
+length(INTER_ARRIVAL_CROSVAL)
+length(INTER_ARRIVAL_CROSVAL_SORTED)
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Run
@@ -296,11 +309,13 @@ if(PARETO_FITTING != 0)
     plotData(1:length(J_history), J_history, 'iterations', 'J(iterations)', '-g', 'Pareto LR - Cost J(iterations) convergence');
     saveas(gca , 'figures/Pareto LR - Cost J(iterations) convergence.png');
     %parameter estimation
-	if(abs(real(theta(2))) < INFINITEZIMAL) 
+	if(abs(real(theta(2))) < INFINITEZIMAL)
+		fprintf('**WARNING** pareto theta(2) set as INFINITEZIMAL. theta(2):%f\n', theta(2)); 
 		theta(2) = INFINITEZIMAL;
 	endif
     pareto_alpha = -theta(2);
     if (pareto_alpha < 0)
+		fprintf('**WARNING** pareto pareto_alpha set as INFINITEZIMAL. pareto_alpha CANT BE ZERO. pareto_alpha:%f\n', pareto_alpha); 
         pareto_alpha = INFINITEZIMAL;
     endif
     pareto_xmf = exp(theta(1)/theta(2))
@@ -898,7 +913,7 @@ for i = 1:EVAL_REPETITIONS
 		exponential_lr_interArrival_sorted( exponential_lr_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
 		exponential_me_interArrival_sorted( exponential_me_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
 	endif
-	if(EXPONENTIAL_FITTING != 0)
+	if(PARETO_FITTING != 0)
 		pareto_lr_interArrival( pareto_lr_interArrival < 0) = 0;
 		pareto_mlh_interArrival( pareto_mlh_interArrival < 0) = 0;
 		pareto_lr_interArrival( pareto_lr_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
@@ -945,13 +960,13 @@ for i = 1:EVAL_REPETITIONS
 		M_eme(4, i) = hurst(exponential_me_interArrival);
 
 	endif
-	if(EXPONENTIAL_FITTING != 0)
+	if(PARETO_FITTING != 0)
 		M_plr(1, i) = corr(INTER_ARRIVAL_CROSVAL_SORTED, pareto_lr_interArrival_sorted);
 		M_plr(2, i) = mean(pareto_lr_interArrival);
 		M_plr(3, i) = std(pareto_lr_interArrival);
 		M_plr(4, i) = hurst(pareto_lr_interArrival); 
 		
-		M_pml(1, i) = corr(INTER_ARRIVAL_CROSVAL_SORTED, pareto_mlh_interArrival);
+		M_pml(1, i) = corr(INTER_ARRIVAL_CROSVAL_SORTED, pareto_mlh_interArrival_sorted);
 		M_pml(2, i) = mean(pareto_mlh_interArrival);
 		M_pml(3, i) = std(pareto_mlh_interArrival);
 		M_pml(4, i) = hurst(pareto_mlh_interArrival); 
