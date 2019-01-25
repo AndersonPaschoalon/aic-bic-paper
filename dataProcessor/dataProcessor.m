@@ -597,7 +597,7 @@ if (CAUCHY_FITTING != 0)
 	cauchy_interArrival = cauchy_rnd(cauchy_x0, cauchy_gamma, m, 1);
 	cauchy_interArrival_sorted = sort(cauchy_interArrival);
 endif
-********************
+
 fprintf('Normalize data - the data must be plausible\n');
 % Normalize data
 % the data must be plausibe. the time cant be negative, and the larger time cannot excede the overall time
@@ -916,8 +916,6 @@ for i = 1:EVAL_REPETITIONS
 		cauchy_interArrival_sorted( cauchy_interArrival_sorted < 0) = 0;
 		cauchy_interArrival_sorted( cauchy_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
 	endif
-
-**********************************8
 	
 	if(WEIBULL_FITTING != 0)
 		%compute correlation
