@@ -621,43 +621,43 @@ fprintf('Normalize data - the data must be plausible\n');
 
 if(WEIBULL_FITTING != 0)
 	weibull_interArrival(weibull_interArrival < 0) = 0;
-	weibull_interArrival(weibull_interArrival > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	weibull_interArrival(weibull_interArrival > MAX_TIME) =  MAX_TIME;
 	weibull_interArrival_sorted(weibull_interArrival_sorted < 0) = 0;
-	weibull_interArrival_sorted(weibull_interArrival_sorted > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	weibull_interArrival_sorted(weibull_interArrival_sorted > MAX_TIME) =  MAX_TIME;
 endif	
 if(NORMAL_FITTING != 0)
 	normal_interArrival( normal_interArrival < 0) = 0;
-	normal_interArrival( normal_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	normal_interArrival( normal_interArrival  > MAX_TIME) =  MAX_TIME;
 
 	normal_interArrival_sorted( normal_interArrival_sorted < 0) = 0;
-	normal_interArrival_sorted( normal_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	normal_interArrival_sorted( normal_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
 
 endif
 if(EXPONENTIAL_FITTING != 0)
 	exponential_lr_interArrival( exponential_lr_interArrival < 0) = 0;
 	exponential_me_interArrival( exponential_me_interArrival < 0) = 0;
-	exponential_lr_interArrival( exponential_lr_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
-	exponential_me_interArrival( exponential_me_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	exponential_lr_interArrival( exponential_lr_interArrival  > MAX_TIME) =  MAX_TIME;
+	exponential_me_interArrival( exponential_me_interArrival  > MAX_TIME) =  MAX_TIME;
 	exponential_lr_interArrival_sorted( exponential_lr_interArrival_sorted < 0) = 0;
 	exponential_me_interArrival_sorted( exponential_me_interArrival_sorted < 0) = 0;
-	exponential_lr_interArrival_sorted( exponential_lr_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
-	exponential_me_interArrival_sorted( exponential_me_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	exponential_lr_interArrival_sorted( exponential_lr_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
+	exponential_me_interArrival_sorted( exponential_me_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
 endif
 if(PARETO_FITTING != 0)
 	pareto_lr_interArrival( pareto_lr_interArrival < 0) = 0;
 	pareto_mlh_interArrival( pareto_mlh_interArrival < 0) = 0;
-	pareto_lr_interArrival( pareto_lr_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
-	pareto_mlh_interArrival( pareto_mlh_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	pareto_lr_interArrival( pareto_lr_interArrival  > MAX_TIME) =  MAX_TIME;
+	pareto_mlh_interArrival( pareto_mlh_interArrival  > MAX_TIME) =  MAX_TIME;
 	pareto_lr_interArrival_sorted( pareto_lr_interArrival_sorted < 0) = 0;
 	pareto_mlh_interArrival_sorted( pareto_mlh_interArrival_sorted < 0) = 0;
-	pareto_lr_interArrival_sorted( pareto_lr_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
-	pareto_mlh_interArrival_sorted( pareto_mlh_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	pareto_lr_interArrival_sorted( pareto_lr_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
+	pareto_mlh_interArrival_sorted( pareto_mlh_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
 endif
 if(CAUCHY_FITTING != 0)
 	cauchy_interArrival( cauchy_interArrival < 0) = 0;
-	cauchy_interArrival( cauchy_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	cauchy_interArrival( cauchy_interArrival  > MAX_TIME) =  MAX_TIME;
 	cauchy_interArrival_sorted( cauchy_interArrival_sorted < 0) = 0;
-	cauchy_interArrival_sorted( cauchy_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+	cauchy_interArrival_sorted( cauchy_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
 endif
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -890,47 +890,47 @@ for i = 1:EVAL_REPETITIONS
 	
 	if(WEIBULL_FITTING != 0)
 		weibull_interArrival(weibull_interArrival < 0) = 0;
-		weibull_interArrival(weibull_interArrival > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		weibull_interArrival(weibull_interArrival > MAX_TIME) =  MAX_TIME;
 		% --sorted
 		weibull_interArrival_sorted(weibull_interArrival_sorted < 0) = 0;
-		weibull_interArrival_sorted(weibull_interArrival_sorted > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		weibull_interArrival_sorted(weibull_interArrival_sorted > MAX_TIME) =  MAX_TIME;
 	endif	
 	if(NORMAL_FITTING != 0)
 		normal_interArrival( normal_interArrival < 0) = 0;
-		normal_interArrival( normal_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		normal_interArrival( normal_interArrival  > MAX_TIME) =  MAX_TIME;
 		% --sorted
 		normal_interArrival_sorted( normal_interArrival_sorted < 0) = 0;
-		normal_interArrival_sorted( normal_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		normal_interArrival_sorted( normal_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
 	endif
 	if(EXPONENTIAL_FITTING != 0)
 		exponential_lr_interArrival( exponential_lr_interArrival < 0) = 0;
 		exponential_me_interArrival( exponential_me_interArrival < 0) = 0;
-		exponential_lr_interArrival( exponential_lr_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
-		exponential_me_interArrival( exponential_me_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		exponential_lr_interArrival( exponential_lr_interArrival  > MAX_TIME) =  MAX_TIME;
+		exponential_me_interArrival( exponential_me_interArrival  > MAX_TIME) =  MAX_TIME;
 		% --sorted
 		exponential_lr_interArrival_sorted( exponential_lr_interArrival_sorted < 0) = 0;
 		exponential_me_interArrival_sorted( exponential_me_interArrival_sorted < 0) = 0;
-		exponential_lr_interArrival_sorted( exponential_lr_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
-		exponential_me_interArrival_sorted( exponential_me_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		exponential_lr_interArrival_sorted( exponential_lr_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
+		exponential_me_interArrival_sorted( exponential_me_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
 	endif
 	if(PARETO_FITTING != 0)
 		pareto_lr_interArrival( pareto_lr_interArrival < 0) = 0;
 		pareto_mlh_interArrival( pareto_mlh_interArrival < 0) = 0;
-		pareto_lr_interArrival( pareto_lr_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
-		pareto_mlh_interArrival( pareto_mlh_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		pareto_lr_interArrival( pareto_lr_interArrival  > MAX_TIME) =  MAX_TIME;
+		pareto_mlh_interArrival( pareto_mlh_interArrival  > MAX_TIME) =  MAX_TIME;
 		% --sorted
 		pareto_lr_interArrival_sorted( pareto_lr_interArrival_sorted < 0) = 0;
 		pareto_mlh_interArrival_sorted( pareto_mlh_interArrival_sorted < 0) = 0;
-		pareto_lr_interArrival_sorted( pareto_lr_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
-		pareto_mlh_interArrival_sorted( pareto_mlh_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		pareto_lr_interArrival_sorted( pareto_lr_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
+		pareto_mlh_interArrival_sorted( pareto_mlh_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
 
 	endif
 	if(CAUCHY_FITTING != 0)
 		cauchy_interArrival( cauchy_interArrival < 0) = 0;
-		cauchy_interArrival( cauchy_interArrival  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		cauchy_interArrival( cauchy_interArrival  > MAX_TIME) =  MAX_TIME;
 		% --sorted
 		cauchy_interArrival_sorted( cauchy_interArrival_sorted < 0) = 0;
-		cauchy_interArrival_sorted( cauchy_interArrival_sorted  > MAX_INTER_ARRIVAL) =  MAX_INTER_ARRIVAL;
+		cauchy_interArrival_sorted( cauchy_interArrival_sorted  > MAX_TIME) =  MAX_TIME;
 	endif
 	
 	if(WEIBULL_FITTING != 0)
