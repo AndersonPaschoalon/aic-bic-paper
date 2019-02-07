@@ -4,7 +4,9 @@ import sys
 import time
 #sys.path.append(os.path.dirname(os.path.abspath(__file__)) + '/..')
 
-from Cd.Cd import Cd
+#from Cd.Cd import Cd
+from Utils.Cd import Cd
+
 
 #PCAP_FILE = "../../Pcap/wireshark-wiki_http.pcap"
 #SIMULATION_NAME = "wombat"
@@ -46,7 +48,9 @@ def run_simulations(pcap_file, sym_name, plots_dir, cd):
     # execute dataProcessor prototype
     os.system('./dataProcessor.m ' + sym_name + ' |tee data/dataProcessorStdOut.log')
     # calc cost function of each simulation
-    os.system('./calcCostFunction.py ' + 'data/')
+    os.system('./calcCostFunction.py data/')
+    # generate AIC/BIC csv and calculate its relative difference
+    os.system('./aicBicRelativeDiff.py data/')
     # back to working directory
     cd.back()
     # creating plots dir, clean if already exist

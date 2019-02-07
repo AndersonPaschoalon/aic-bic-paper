@@ -1,0 +1,8 @@
+# StochasticModel, CostFunction
+Exponential(Me), 1
+Normal, 5
+Weibull, 8
+Pareto(MLH), 10
+Exponential(LR), 10
+Pareto(LR), 13
+Cauchy, 16

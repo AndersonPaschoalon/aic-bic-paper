@@ -1,0 +1,10 @@
+#Hurst Exponent
+#Distribution, Hust, Error
+Original       ,0.586909,0.000000
+Weibull        ,0.513430,0.012166
+Normal         ,0.515785,0.012575
+Exponential(LR),0.533416,0.011586
+Exponential(Me),0.533416,0.011586
+Pareto(LR)     ,0.503957,0.008059
+Pareto(MLH)    ,0.532589,0.009420
+Cauchy         ,NaN,NaN

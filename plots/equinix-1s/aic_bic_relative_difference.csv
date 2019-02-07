@@ -1,0 +1,8 @@
+# StochasticModels, AIC/BIC_relative_difference(%)
+Weibull, 8.862183409441267e-05
+Normal, 7.575144901945332e-05
+Exponential(LR), 4.2573797546249394e-05
+Exponential(Me), 3.676280348700754e-05
+Pareto(LR), 5.364839070176872e-05
+Pareto(MLH), 7.737494851651524e-05
+Cauchy, 8.083654947721385e-05

@@ -1,8 +1,8 @@
-Weibull: weibull_alpha=0.076413, weibull_betha=0.000001
-Normal: normal_mean=0.000002, normal_std=0.000001
-Exponential(LR)=0.000022
-Exponential(Me)=657503.095127
-Pareto(LR): pareto_alpha=0.000000, pareto_xm=0.000000
-Pareto(MLH): pareto_mlh_alpha=0.338987, pareto_mlh_xm=0.000000
-Cauchy: cauchy_gamma=828.317809, cauchy_x0=-4520.450371
+Weibull         : weibull_alpha=0.076401, weibull_betha=0.000001
+Normal          : normal_mean=0.000002, normal_std=0.000001
+Exponential(LR) : exp_lambda=0.000022
+Exponential(Me) : exp_lambdaMean=657660.527337
+Pareto(LR)      : pareto_alpha=0.000000, pareto_xm=0.000000
+Pareto(MLH)     : pareto_mlh_alpha=0.339004, pareto_mlh_xm=0.000000
+Cauchy          : cauchy_gamma=817.162152, cauchy_x0=-4453.397500
 

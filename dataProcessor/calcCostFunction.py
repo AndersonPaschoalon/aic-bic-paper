@@ -101,6 +101,6 @@ for i in range(0, len(corr_float)):
 
 # save the cost function values into a costFunction.dat file
 costFunction.sort(key=lambda tup: tup[1])
-np.savetxt(PATH_DIR + 'costFunction.dat', costFunction, delimiter=", ", fmt='%s', header='Metrics cost function')
+np.savetxt(PATH_DIR + 'costFunction.dat', costFunction, delimiter=", ", fmt='%s', header='StochasticModel, CostFunction')
 print("costFunction=", costFunction)
-
+print("*****************")

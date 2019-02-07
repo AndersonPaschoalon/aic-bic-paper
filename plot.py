@@ -20,6 +20,10 @@ from Utils.Terminal import Terminal as term
 def signedlog(values):
     return [i / abs(i) * math.log(abs(i)) for i in values]
 
+def prepare_aic_bic_csv(list_aib_bic_files):
+    for tab_file in list_aib_bic_files:
+        table2csv(tab_file)
+
 
 def table2csv(filename):
     """
@@ -278,6 +282,7 @@ def plot_cdf_fitting(plot_dir, fitting_data, original_datafile, plot_title, plot
     ax1.plot(ox, oy, 'r-', label=olabel, linewidth=2)
     ax1.plot(fx, fy, '-.', color="darkblue", label=flabel, linewidth=2.5)
     ax1.legend(loc='lower right')
+    # ax1.set_aspect(aspect=1.50)
     plt.xlim([-0.1, 10])
     plt.ylim([0, 1.01])
     plt.xlabel(xlabel)
@@ -289,6 +294,7 @@ def plot_cdf_fitting(plot_dir, fitting_data, original_datafile, plot_title, plot
     ax2.plot(ox, oy, 'r-', label=olabel, linewidth=2)
     ax2.plot(fx, fy, '-.', color="darkblue", label=flabel, linewidth=2.5)
     ax2.legend(loc='upper left')
+    # ax2.set_aspect(aspect=1.50)
     plt.semilogx()
     plt.ylim([0, 1.01])
     plt.grid(color='black', linestyle=':')
@@ -615,21 +621,22 @@ def plot_cost_function_all2(costfunction1="", costfunction2="", costfunction3=""
     fig, ax = plt.subplots()
     with plt.style.context('default'):
         plt.xticks(xvalues, xlables)
-        plt.plot(xvalues, values0, label=label0, marker='o', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values1, label=label1, marker='*', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values2, label=label2, marker='d', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values3, label=label3, marker='<', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values4, label=label4, marker='>', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values5, label=label5, marker='s', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values6, label=label6, marker='P', linewidth=line_width, markersize=mark_size)
+        plt.plot(xvalues, values0, label=label0, marker='o', linewidth=line_width, markersize=mark_size, color="darkblue", markeredgecolor="black")
+        plt.plot(xvalues, values1, label=label1, marker='*', linewidth=line_width, markersize=mark_size, color="dodgerblue", markeredgecolor="black")
+        plt.plot(xvalues, values2, label=label2, marker='d', linewidth=line_width, markersize=mark_size, color="springgreen", markeredgecolor="black")
+        plt.plot(xvalues, values3, label=label3, marker='<', linewidth=line_width, markersize=mark_size, color="lime", markeredgecolor="black")
+        plt.plot(xvalues, values4, label=label4, marker='>', linewidth=line_width, markersize=mark_size, color="gold", markeredgecolor="black")
+        plt.plot(xvalues, values5, label=label5, marker='s', linewidth=line_width, markersize=mark_size, color="red", markeredgecolor="black")
+        plt.plot(xvalues, values6, label=label6, marker='P', linewidth=line_width, markersize=mark_size, color="purple", markeredgecolor="black")
     # Shrink current axis's height by 10% on the bottom
-    box = ax.get_position()
     # ax.set_position([box.x0, box.y0 + box.height * 0.1, box.width, box.height * 0.9])
     # Put a legend below current axis
     ax.legend(loc='lower center', bbox_to_anchor=(0.5, -0.4), fancybox=True, shadow=True, ncol=3)
     ax.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-    plt.ylabel("Cost Function")
-    plt.xlabel('Pcap file')
+    ax.set_aspect(aspect=0.10)
+    plt.plot(usetex=True)
+    plt.ylabel("Cost Function $J$")
+    plt.xlabel('Pcap Files')
     plt.title(title)
     # plt.legend()
     plt.grid(color='black', linestyle=':', axis='y')
@@ -685,21 +692,22 @@ def plot_aic_bic2(aicbicfile1="", aicbicfile2="", aicbicfile3="", aicbicfile4=""
     fig, ax = plt.subplots()
     with plt.style.context('default'):
         plt.xticks(xvalues, xlables)
-        plt.plot(xvalues, values0, label=label0, marker='o', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values1, label=label1, marker='*', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values2, label=label2, marker='d', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values3, label=label3, marker='<', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values4, label=label4, marker='>', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values5, label=label5, marker='s', linewidth=line_width, markersize=mark_size)
-        plt.plot(xvalues, values6, label=label6, marker='P', linewidth=line_width, markersize=mark_size)
+        plt.plot(xvalues, values0, label=label0, marker='o', linewidth=line_width, markersize=mark_size, color="darkblue", markeredgecolor="black")
+        plt.plot(xvalues, values1, label=label1, marker='*', linewidth=line_width, markersize=mark_size, color="dodgerblue", markeredgecolor="black")
+        plt.plot(xvalues, values2, label=label2, marker='d', linewidth=line_width, markersize=mark_size, color="springgreen", markeredgecolor="black")
+        plt.plot(xvalues, values3, label=label3, marker='<', linewidth=line_width, markersize=mark_size, color="lime", markeredgecolor="black")
+        plt.plot(xvalues, values4, label=label4, marker='>', linewidth=line_width, markersize=mark_size, color="gold", markeredgecolor="black")
+        plt.plot(xvalues, values5, label=label5, marker='s', linewidth=line_width, markersize=mark_size, color="red", markeredgecolor="black")
+        plt.plot(xvalues, values6, label=label6, marker='P', linewidth=line_width, markersize=mark_size, color="purple", markeredgecolor="black")
     # Shrink current axis's height by 10% on the bottom
-    box = ax.get_position()
+    # box = ax.get_position()
     # ax.set_position([box.x0, box.y0 + box.height * 0.1, box.width, box.height * 0.9])
     # Put a legend below current axis
     # ax.legend(loc='lower center', bbox_to_anchor=(0.5, -0.4), fancybox=True, shadow=True, ncol=3)
     ax.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
-    plt.ylabel("Cost Function")
-    plt.xlabel('Pcap File')
+    ax.set_aspect(aspect=0.25)
+    plt.ylabel("AIC/BIC position")
+    plt.xlabel('Pcap Files')
     plt.title(title)
     plt.grid(color='black', linestyle=':', axis='y')
     plt.tight_layout()
@@ -940,10 +948,10 @@ def plot_costfunction_vs_aicbic(aicbic1, costfunction1, pcaptitle1,
     """
     print_info(title=title, location=plotfile)
     # create AIC and BIC csv file
-    table2csv(aicbic1)
-    table2csv(aicbic2)
-    table2csv(aicbic3)
-    table2csv(aicbic4)
+    # table2csv(aicbic1)
+    # table2csv(aicbic2)
+    # table2csv(aicbic3)
+    # table2csv(aicbic4)
     # aicbic_data1 = load_csv_str(datafile=aicbic1 + '.csv')
     # aicbic_data2 = load_csv_str(datafile=aicbic2 + '.csv')
     # aicbic_data3 = load_csv_str(datafile=aicbic3 + '.csv')
@@ -994,7 +1002,8 @@ def plot_costfunction_vs_aicbic(aicbic1, costfunction1, pcaptitle1,
     plt.axhline(hline2, color="red")
     # general layout
     plt.xticks([r + bar_width for r in range(len(bars1))], xticks)
-    plt.ylabel('ranking delta')
+    plt.ylabel('Ranking delta $\delta$')
+    plt.xlabel('n-th best model according to $J$')
     plt.title(title)
     plt.legend()
     plt.grid(color='black', linestyle=':', axis='y')
@@ -1092,6 +1101,48 @@ def plot_aic_bic(aicbicfile1, pcaptitle1, aicbicfile2, pcaptitle2,
     plt.tight_layout()
     print_info(title=title_order, location=plotfile_order)
     saver_helper(fig, file_name=plotfile_order)
+    plt_free()
+
+
+def plot_lanfirewall_cdfs(plotdir, datasubdir, empirical_cdf_crossval, pareto_lr_cdf_approximation,
+                               pareto_mlh_cdf_approximation, weibull_cdf_approximation):
+    # datafiles
+    datadir = plotdir + datasubdir
+    empirical_cdf_crossval = datadir + empirical_cdf_crossval
+    pareto_lr_cdf_approximation = datadir + pareto_lr_cdf_approximation
+    pareto_mlh_cdf_approximation = datadir + pareto_mlh_cdf_approximation
+    weibull_cdf_approximation = datadir + weibull_cdf_approximation
+    # load data
+    original_data = load_csv(empirical_cdf_crossval)
+    pa_lr = load_csv(pareto_lr_cdf_approximation)
+    pa_mlh = load_csv(pareto_mlh_cdf_approximation)
+    weibull = load_csv(weibull_cdf_approximation)
+    ox = column(original_data, 0)
+    oy = column(original_data, 1)
+    px = column(pa_mlh, 0)
+    py = column(pa_mlh, 1)
+    plx = column(pa_lr, 0)
+    ply = column(pa_lr, 1)
+    wx = column(weibull, 0)
+    wy = column(weibull, 1)
+    # Plot Figure
+    fig2, ax2 = plt.subplots()
+    xlabel = "Inter packet time (s)"
+    ylabel = "CDF function"
+    ax2.plot(ox, oy, '-', color="red", label="cross-validation", linewidth=2)
+    ax2.plot(plx, ply, ':', color="green", label="Pareto(LR)", linewidth=3)
+    ax2.plot(px, py, '-.', color="purple", label="Pareto(MLH)", linewidth=3)
+    ax2.plot(wx, wy, '--', color="darkblue", label="Weibull", linewidth=3)
+    ax2.legend(loc='upper left')
+    plt.semilogx()
+    plt.xlim([-0.1, 10])
+    plt.ylim([0, 1.01])
+    plt.grid(color='black', linestyle=':')
+    plot_title = "Approximations vs Cross-validation dataset"
+    plt.title(plot_title)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    saver_helper(fig2, file_name=plotdir + "paper/" + "cdfs")
     plt_free()
 
 
@@ -1204,7 +1255,7 @@ def dataprocessor_simulation_plot(plot_dir):
     plot_cost_function(plot_dir, 'costFunction.dat', 'Cost Function', 'costFunction')
 
 
-def paper_aicbic_plots():
+def paper_aicbic_plots_pt1():
     """
     Generate the plots for AIC/BIC paper
     """
@@ -1212,21 +1263,23 @@ def paper_aicbic_plots():
     plot_dir = "./plots/"
     term.command(cmd="mkdir -p " + plot_dir + 'paper/', color="green")
     pcaptitle1 = "skype"
-    pcaptitle2 = "lan gateway"
-    pcaptitle3 = "lan firewall diurnal"
+    pcaptitle2 = "lan-gateway"
+    pcaptitle3 = "lan-firewall"
     pcaptitle4 = "wan"
     costfunction1 = plot_dir + "skype/costFunction.dat"
     costfunction2 = plot_dir + "bigFlows/costFunction.dat"
-    costfunction3 = plot_dir + "lanDiurnal/costFunction.dat"
+    costfunction3 = plot_dir + "lan-firewall/costFunction.dat"
     costfunction4 = plot_dir + "equinix-1s/costFunction.dat"
-    # aicbic1 = "skype/Aic-Bic.dat"
-    # aicbic2 = "bigFlows/Aic-Bic.dat"
-    # aicbic3 = "lanDiurnal/Aic-Bic.dat"
-    # aicbic4 = "equinix-1s/Aic-Bic.dat"
-    # AIC and BIC values
+    # AIC and BIC tables
+    aicbic1 = plot_dir + "skype/Aic-Bic.dat"
+    aicbic2 = plot_dir + "bigFlows/Aic-Bic.dat"
+    aicbic3 = plot_dir + "lan-firewall/Aic-Bic.dat"
+    aicbic4 = plot_dir + "equinix-1s/Aic-Bic.dat"
+    prepare_aic_bic_csv([aicbic1, aicbic2, aicbic3, aicbic4])
+    # AIC and BIC csv
     aicbic1 = plot_dir + "skype/Aic-Bic.dat.csv"
     aicbic2 = plot_dir + "bigFlows/Aic-Bic.dat.csv"
-    aicbic3 = plot_dir + "lanDiurnal/Aic-Bic.dat.csv"
+    aicbic3 = plot_dir + "lan-firewall/Aic-Bic.dat.csv"
     aicbic4 = plot_dir + "equinix-1s/Aic-Bic.dat.csv"
     # Cost Function Sumary
     plot_cost_function_all(costfunction1=costfunction1, costfunction2=costfunction2,
@@ -1262,7 +1315,31 @@ def paper_aicbic_plots():
                   pcapname4=pcaptitle4, title="AIC/BIC position", plotfile=plot_dir + "paper/aic-bic-order-v2")
 
 
+def paper_aicbic_plots_pt2():
+    plotdir = "./plots/"
+    datasubdir = "lan-firewall/"
+    empirical_cdf_crossval = "Empirical CDF function cross-validation.dat"
+    pareto_lr_cdf_approximation = "Pareto aproximation (linear regression) vs Original set.dat"
+    pareto_mlh_cdf_approximation = "Pareto aproximation (maximum likehood) vs Original set.dat"
+    weibull_cdf_approximation = "Weibull aproximation vs Original set.dat"
+    plot_lanfirewall_cdfs(plotdir, datasubdir, empirical_cdf_crossval, pareto_lr_cdf_approximation,
+                          pareto_mlh_cdf_approximation, weibull_cdf_approximation)
+
+
+########################################################################################################################
+# Temporaty functions
+########################################################################################################################
+
 def plot_sim_cost_history(plot_dir):
+    """
+    Temporary function to plot just the cost history
+    # parser.add_argument("--costhistory", type=str, nargs="+", help="directory", required=False)
+    # elif args["costhistory"]:
+    #    # ./plots.py --costhistory "./plots/skype/"
+    #    plot_sim_cost_history(args.get("costhistory")[0])
+    :param plot_dir:
+    :return:
+    """
     plot_cost_history(plot_dir=plot_dir, datafile="Weibull - Cost J(iterations) convergence.dat",
                       plot_title="Weibull: Linear Regression Cost History",
                       plot_file="Weibull - Cost J(iterations) convergence")
@@ -1278,7 +1355,13 @@ def plot_sim_cost_history(plot_dir):
 
 
 def plot_cauchy_linear_regression(plot_dir):
-    """Used to plot just the Cauchy Linear regression figures"""
+    """
+    Used to plot just the Cauchy Linear regression figures
+    # parser.add_argument("--cauchy", type=str, nargs="+", help="directory", required=False)
+    # elif args["cauchy"]:
+    #    # ./plots.py --costhistory "./plots/skype/"
+    #    plot_cauchy_linear_regression(args.get("cauchy")[0])
+    """
     plot_linear_regression(plot_dir=plot_dir, datafile="Cauchy - Linearized data and linear fitting.dat",
                            plot_title="Cauchy - Linearized data and linear fitting",
                            plot_file="Cauchy - Linearized data and linear fitting")
@@ -1317,8 +1400,8 @@ def run_tests():
     plot_dir = "./plots/"
     term.command("mkdir -p " + plot_dir + 'paper/', color="green")
     pcaptitle1 = "skype"
-    pcaptitle2 = "lan gateway"
-    pcaptitle3 = "lan firewall diurnal"
+    pcaptitle2 = "lan-gateway"
+    pcaptitle3 = "lan-firewall-diurnal"
     pcaptitle4 = "wan"
     costfunction1 = "skype/costFunction.dat"
     costfunction2 = "bigFlows/costFunction.dat"
@@ -1352,26 +1435,25 @@ if __name__ == "__main__":
     parser.add_argument("--paper", action='store_true',
                         help="run sumarry plots for 4 the 4 experiments used on the paper..",
                         required=False)
-    # parser.add_argument("--costhistory", type=str, nargs="+", help="directory", required=False)
-    # parser.add_argument("--cauchy", type=str, nargs="+", help="directory", required=False)
+
+
     parser.add_argument("--man", action='store_true', help="Manual", required=False)
+    parser.add_argument("--test", action='store_true', help="Run plots being developed", required=False)
 
     args = vars(parser.parse_args())  # convert parser object to a dictionary
     # args = args = {'paper': False, 'test': True, 'simulation': 'plots/skype/', 'test2': None}
-    # args = {'paper': False, 'test': True, 'simulation': None, 'man': False}
+    # args = args = {'paper': False, 'paper2': False, 'test': True, 'simulation': 'plots/skype/', 'test2': None}
+    # args = {"paper": False, "test": True, "simulation": None, "man": None}
     if args["simulation"]:
         # ./plots.py --simulation "./plots/skype/"
         term.print_color(color="green", data='./plots.py --simulation "{0}"'.format(args.get("simulation")[0]))
         dataprocessor_simulation_plot(args.get('simulation')[0])
     elif args["paper"]:
         # ./plots.py --paper
-        paper_aicbic_plots()
-    # elif args["costhistory"]:
-    #    # ./plots.py --costhistory "./plots/skype/"
-    #    plot_sim_cost_history(args.get("costhistory")[0])
-    # elif args["cauchy"]:
-    #    # ./plots.py --costhistory "./plots/skype/"
-    #    plot_cauchy_linear_regression(args.get("cauchy")[0])
+        paper_aicbic_plots_pt1()
+    elif args["paper2"]:
+        # ./plots.py --paper
+        paper_aicbic_plots_pt2()
     elif args["man"]:
         # ./plots.py --help
         help_menu()

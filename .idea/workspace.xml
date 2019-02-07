@@ -2,12 +2,639 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b5e60cd-73a3-4164-bc4a-0f9b09c52d34" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/.bigFlows" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/Aic-Bic.dat.csv.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto - Linearized data and linear fitting.dat.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto - Linearized data and linear fitting.dat.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto - Linearized data and linear fitting.dat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:Pareto - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:Pareto - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Exponential(LR).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Exponential(LR).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Normal.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Normal.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Pareto(LR).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Pareto(LR).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Pareto(MLH).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Pareto(MLH).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Weibull.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:QQplot - Weibull.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:Weibull - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/part:Weibull - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/bigFlows/plot-log.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/.equinix-1s" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Aic-Bic.dat.csv.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Linearized data and linear fitting.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Cost J(iterations) convergence.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Hurst exponent of inter-packet time.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Cauchy aproximation vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (linear regression) vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (mean) vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Normal aproximation vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Pareto aproximation (maximum likehood) vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Weibull aproximation vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Cauchy aproximation vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (linear regression) vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (mean) vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Normal aproximation vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Pareto aproximation (maximum likehood) vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Weibull aproximation vs Original set.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Mean inter-packet time.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Cost J(iterations) convergence.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Linearized data and linear fitting.dat.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Linearized data and linear fitting.dat.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Linearized data and linear fitting.dat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Cost J(iterations) convergence.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/log2.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Cauchy - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Cauchy - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Cauchy - Linearized data and linear fitting.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Empirical CDF function.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Empirical CDF function.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Exponential - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Exponential - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Exponential - Linearized data and linear fitting.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Exponential - Linearized data and linear fitting.svg.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Exponential - Linearized data and linear fitting.svg.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Exponential - Linearized data and linear fitting.svg.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Exponential - Linearized data and linear fitting.svg.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Exponential - Linearized data and linear fitting.svg.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Exponential - Linearized data and linear fitting.svg.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.svg.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.svg.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.svg.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.svg.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.svg.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Pareto - Linearized data and linear fitting.dat.svg.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Cauchy.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Cauchy.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Cauchy.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Cauchy.svg.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Cauchy.svg.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Cauchy.svg.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Cauchy.svg.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Cauchy.svg.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Cauchy.svg.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).svg.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).svg.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).svg.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).svg.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).svg.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(LR).svg.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(Me).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(Me).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(Me).dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(Me).svg.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(Me).svg.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(Me).svg.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(Me).svg.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(Me).svg.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Exponential(Me).svg.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.svg.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.svg.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.svg.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.svg.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.svg.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Normal.svg.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(LR).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(LR).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(LR).dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(LR).svg.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(LR).svg.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(LR).svg.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(LR).svg.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(LR).svg.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(LR).svg.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(MLH).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(MLH).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(MLH).dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Pareto(MLH).dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Weibull.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Weibull.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Weibull.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:QQplot - Weibull.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.svg.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.svg.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.svg.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.svg.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.svg.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/part:Weibull - Linearized data and linear fitting.svg.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/equinix-1s/plot-log.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/.lanDiurnal" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Aic-Bic.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Aic-Bic.dat.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Aic-Bic.dat.csv.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Cauchy - Cost J(iterations) convergence.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Cauchy - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Cauchy - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Cauchy - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Cauchy - Linearized data and linear fitting.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Cauchy - Linearized data and linear fitting.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Cauchy - Linearized data and linear fitting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Cauchy aproximation vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Correlation.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Correlation.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Correlation.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Correlation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Exponential - Cost J(iterations) convergence.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Exponential - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Exponential - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Exponential - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Exponential - Linearized data and linear fitting.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Exponential - Linearized data and linear fitting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Exponential aproximation (linear regression) vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Exponential aproximation (mean) vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Hurst Exponent.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Hurst Exponent.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Hurst Exponent.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Hurst Exponent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Cauchy aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Cauchy aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Cauchy aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Exponential aproximation (linear regression) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Exponential aproximation (linear regression) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Exponential aproximation (linear regression) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Exponential aproximation (mean) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Exponential aproximation (mean) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Exponential aproximation (mean) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Normal aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Normal aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Normal aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Weibull aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Weibull aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Linear - Weibull aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Cauchy aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Cauchy aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Cauchy aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Exponential aproximation (linear regression) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Exponential aproximation (linear regression) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Exponential aproximation (linear regression) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Exponential aproximation (mean) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Exponential aproximation (mean) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Exponential aproximation (mean) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Normal aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Normal aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Normal aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Weibull aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Weibull aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Log - Weibull aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Mean.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Mean.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Mean.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Mean.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Normal aproximation vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Pareto - Cost J(iterations) convergence.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Pareto - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Pareto - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Pareto - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Pareto - Linearized data and linear fitting.dat.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Pareto - Linearized data and linear fitting.dat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Pareto aproximation (linear regression) vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Pareto aproximation (maximum likehood) vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Cauchy.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Cauchy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Exponential(LR).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Exponential(LR).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Exponential(Me).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Exponential(Me).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Normal.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Pareto(LR).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Pareto(LR).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Pareto(MLH).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Pareto(MLH).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Weibull.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/QQplot - Weibull.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Standard Deviation.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Standard Deviation.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Standard Deviation.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Standard Deviation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Weibull - Cost J(iterations) convergence.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Weibull - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Weibull - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Weibull - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Weibull - Linearized data and linear fitting.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Weibull - Linearized data and linear fitting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/Weibull aproximation vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/costFunction.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/dataProcessorStdOut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/functions-parameters.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Cauchy - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Cauchy - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Cauchy - Linearized data and linear fitting.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Cauchy - Linearized data and linear fitting.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Cauchy - Linearized data and linear fitting.dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Cauchy - Linearized data and linear fitting.dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Empirical CDF function.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Empirical CDF function.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Empirical CDF function.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Exponential - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Exponential - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Exponential - Linearized data and linear fitting.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Exponential - Linearized data and linear fitting.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Exponential - Linearized data and linear fitting.dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Exponential - Linearized data and linear fitting.dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Exponential - Linearized data and linear fitting.eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Exponential - Linearized data and linear fitting.eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.ag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.ah" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Pareto - Linearized data and linear fitting.dat.eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Cauchy.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Cauchy.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Cauchy.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Cauchy.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Cauchy.dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Cauchy.dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Cauchy.eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Cauchy.eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(LR).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(LR).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(LR).dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(LR).dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(LR).dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(LR).dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(LR).dat.ag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(LR).eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(LR).eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(Me).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(Me).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(Me).dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(Me).dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(Me).dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(Me).dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(Me).eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Exponential(Me).eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Normal.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Normal.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Normal.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Normal.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Normal.dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Normal.dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Normal.eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Normal.eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(LR).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(LR).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(LR).dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(LR).dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(LR).dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(LR).dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(LR).dat.ag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(LR).eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(LR).eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(MLH).dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(MLH).dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(MLH).dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(MLH).dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(MLH).dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(MLH).dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(MLH).dat.ag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(MLH).eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Pareto(MLH).eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Weibull.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Weibull.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Weibull.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Weibull.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Weibull.dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Weibull.dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Weibull.dat.ag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Weibull.eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:QQplot - Weibull.eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.dat.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.dat.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.dat.ac" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.dat.ad" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.dat.ae" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.dat.af" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.dat.ag" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.dat.ah" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.eps.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:Weibull - Linearized data and linear fitting.eps.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:data_lanDiurnal.txt.aa" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/lanDiurnal/part:data_lanDiurnal.txt.ab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Aic-Bic.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Cauchy - Cost J(iterations) convergence.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Cauchy - Linearized data and linear fitting.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Cauchy - Linearized data and linear fitting.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Cauchy - Linearized data and linear fitting.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Cauchy - Linearized data and linear fitting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Cauchy aproximation vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Correlation.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Correlation.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Correlation.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Correlation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Empirical CDF function.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential - Cost J(iterations) convergence.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential - Linearized data and linear fitting.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential - Linearized data and linear fitting.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential - Linearized data and linear fitting.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential - Linearized data and linear fitting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential aproximation (linear regression) vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Exponential aproximation (mean) vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Hurst Exponent.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Hurst Exponent.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Hurst Exponent.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Hurst Exponent.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Cauchy aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Cauchy aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Cauchy aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Exponential aproximation (linear regression) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Exponential aproximation (linear regression) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Exponential aproximation (linear regression) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Exponential aproximation (mean) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Exponential aproximation (mean) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Exponential aproximation (mean) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Normal aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Normal aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Normal aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Pareto aproximation (linear regression) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Pareto aproximation (linear regression) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Pareto aproximation (linear regression) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Weibull aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Weibull aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Linear - Weibull aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Cauchy aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Cauchy aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Cauchy aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Exponential aproximation (linear regression) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Exponential aproximation (linear regression) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Exponential aproximation (linear regression) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Exponential aproximation (mean) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Exponential aproximation (mean) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Exponential aproximation (mean) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Normal aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Normal aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Normal aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Pareto aproximation (linear regression) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Pareto aproximation (linear regression) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Pareto aproximation (linear regression) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Weibull aproximation vs Original set.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Weibull aproximation vs Original set.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Log - Weibull aproximation vs Original set.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Mean.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Mean.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Mean.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Mean.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Normal aproximation vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto - Cost J(iterations) convergence.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto - Linearized data and linear fitting.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto - Linearized data and linear fitting.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto - Linearized data and linear fitting.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto - Linearized data and linear fitting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto aproximation (linear regression) vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Pareto aproximation (maximum likehood) vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Cauchy.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Cauchy.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Cauchy.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Cauchy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Exponential(LR).dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Exponential(LR).eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Exponential(LR).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Exponential(LR).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Exponential(Me).dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Exponential(Me).eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Exponential(Me).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Exponential(Me).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Normal.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Normal.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Normal.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Normal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Pareto(LR).dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Pareto(LR).eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Pareto(LR).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Pareto(LR).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Pareto(MLH).dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Pareto(MLH).eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Pareto(MLH).pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Pareto(MLH).png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Weibull.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Weibull.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Weibull.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/QQplot - Weibull.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Standard Deviation.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Standard Deviation.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Standard Deviation.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Standard Deviation.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Weibull - Cost J(iterations) convergence.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Weibull - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Weibull - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Weibull - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Weibull - Linearized data and linear fitting.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Weibull - Linearized data and linear fitting.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Weibull - Linearized data and linear fitting.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Weibull - Linearized data and linear fitting.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/Weibull aproximation vs Original set.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/about.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/costFunction.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/costFunction.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/costFunction.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/costFunction.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/dataProcessorStdOut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/data_muzaranho.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/muzaranho/functions-parameters.dat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/skype/Aic-Bic.dat.csv.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/skype/Cauchy - Cost J(iterations) convergence.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/skype/Cauchy - Cost J(iterations) convergence.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/skype/Cauchy - Cost J(iterations) convergence.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.dat.eps" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.dat.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.dat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plots/skype/plot-log.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Linearized data and linear fitting.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Linearized data and linear fitting.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Linearized data and linear fitting.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Linearized data and linear fitting.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Linearized data and linear fitting.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Linearized data and linear fitting.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Correlation.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Correlation.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Correlation.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Correlation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential - Cost J(iterations) convergence.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential - Cost J(iterations) convergence.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential - Cost J(iterations) convergence.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential - Cost J(iterations) convergence.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential - Linearized data and linear fitting.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential - Linearized data and linear fitting.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential - Linearized data and linear fitting.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential - Linearized data and linear fitting.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential - Linearized data and linear fitting.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential - Linearized data and linear fitting.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Hurst Exponent.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Hurst Exponent.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Hurst Exponent.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Hurst Exponent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Cauchy aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Cauchy aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Cauchy aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Cauchy aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (linear regression) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (linear regression) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (linear regression) vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (linear regression) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (mean) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (mean) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (mean) vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (mean) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Normal aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Normal aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Normal aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Normal aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Pareto aproximation (maximum likehood) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Pareto aproximation (maximum likehood) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Weibull aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Weibull aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Weibull aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Weibull aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Cauchy aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Cauchy aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Cauchy aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Cauchy aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (linear regression) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (linear regression) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (linear regression) vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (linear regression) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (mean) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (mean) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (mean) vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (mean) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Normal aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Normal aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Normal aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Normal aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Pareto aproximation (maximum likehood) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Pareto aproximation (maximum likehood) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Weibull aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Weibull aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Weibull aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Weibull aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Mean.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Mean.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Mean.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Mean.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto - Cost J(iterations) convergence.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Pareto - Cost J(iterations) convergence.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto - Cost J(iterations) convergence.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Pareto - Cost J(iterations) convergence.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto - Linearized data and linear fitting.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Pareto - Linearized data and linear fitting.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Cauchy.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Cauchy.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Cauchy.png" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Cauchy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(LR).dat" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(LR).dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(LR).pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(LR).pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(LR).png" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(LR).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(Me).dat" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(Me).dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(Me).pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(Me).pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(Me).png" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(Me).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Normal.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Normal.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Normal.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Normal.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Normal.png" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Normal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(LR).dat" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(LR).dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(LR).pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(LR).pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(LR).png" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(LR).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(MLH).dat" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(MLH).dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(MLH).pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(MLH).pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(MLH).png" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(MLH).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Weibull.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Weibull.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Weibull.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Weibull.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Weibull.png" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Weibull.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Standard Deviation.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Standard Deviation.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Standard Deviation.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Standard Deviation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Weibull - Cost J(iterations) convergence.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Weibull - Cost J(iterations) convergence.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Weibull - Cost J(iterations) convergence.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Weibull - Cost J(iterations) convergence.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Weibull - Linearized data and linear fitting.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Weibull - Linearized data and linear fitting.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Weibull - Linearized data and linear fitting.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/Weibull - Linearized data and linear fitting.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Weibull - Linearized data and linear fitting.png" afterPath="$PROJECT_DIR$/plots/bigFlows/Weibull - Linearized data and linear fitting.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/costFunction.pdf" afterPath="$PROJECT_DIR$/plots/bigFlows/costFunction.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/costFunction.png" afterPath="$PROJECT_DIR$/plots/bigFlows/costFunction.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Linearized data and linear fitting.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Linearized data and linear fitting.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Linearized data and linear fitting.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Linearized data and linear fitting.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Correlation.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Correlation.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Correlation.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Correlation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Cost J(iterations) convergence.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Cost J(iterations) convergence.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Cost J(iterations) convergence.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Cost J(iterations) convergence.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Linearized data and linear fitting.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Linearized data and linear fitting.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Linearized data and linear fitting.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Linearized data and linear fitting.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Hurst Exponent.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Hurst Exponent.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Hurst Exponent.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Hurst Exponent.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Cauchy aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Cauchy aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Cauchy aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Cauchy aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (linear regression) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (linear regression) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (linear regression) vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (linear regression) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (mean) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (mean) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (mean) vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (mean) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Normal aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Normal aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Normal aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Normal aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Pareto aproximation (maximum likehood) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Pareto aproximation (maximum likehood) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Weibull aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Weibull aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Weibull aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Weibull aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Cauchy aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Cauchy aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Cauchy aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Cauchy aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (linear regression) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (linear regression) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (linear regression) vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (linear regression) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (mean) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (mean) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (mean) vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (mean) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Normal aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Normal aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Normal aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Normal aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Pareto aproximation (maximum likehood) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Pareto aproximation (maximum likehood) vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Weibull aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Weibull aproximation vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Weibull aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Weibull aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Mean.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Mean.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Mean.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Mean.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Cost J(iterations) convergence.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Cost J(iterations) convergence.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Cost J(iterations) convergence.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Cost J(iterations) convergence.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Cauchy.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Cauchy.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Cauchy.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Cauchy.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Cauchy.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Cauchy.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(LR).eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(LR).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(LR).pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(LR).pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(LR).png" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(LR).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(Me).eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(Me).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(Me).pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(Me).pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(Me).png" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Exponential(Me).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Normal.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Normal.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Normal.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Normal.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Normal.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Normal.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(LR).eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(LR).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(LR).pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(LR).pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(LR).png" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(LR).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(MLH).eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(MLH).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(MLH).pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(MLH).pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(MLH).png" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Pareto(MLH).png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Weibull.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Weibull.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Weibull.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Weibull.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Weibull.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/QQplot - Weibull.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Standard Deviation.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Standard Deviation.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Standard Deviation.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Standard Deviation.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Cost J(iterations) convergence.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Cost J(iterations) convergence.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Cost J(iterations) convergence.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Cost J(iterations) convergence.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Linearized data and linear fitting.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Linearized data and linear fitting.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Linearized data and linear fitting.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Linearized data and linear fitting.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/costFunction.pdf" afterPath="$PROJECT_DIR$/plots/equinix-1s/costFunction.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/costFunction.png" afterPath="$PROJECT_DIR$/plots/equinix-1s/costFunction.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aic-bic-logscale-sumary.pdf" afterPath="$PROJECT_DIR$/plots/paper/aic-bic-logscale-sumary.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aic-bic-logscale-sumary.png" afterPath="$PROJECT_DIR$/plots/paper/aic-bic-logscale-sumary.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aic-bic-order-v2.pdf" afterPath="$PROJECT_DIR$/plots/paper/aic-bic-order-v2.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aic-bic-order-v2.png" afterPath="$PROJECT_DIR$/plots/paper/aic-bic-order-v2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aic-bic-order.pdf" afterPath="$PROJECT_DIR$/plots/paper/aic-bic-order.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aic-bic-order.png" afterPath="$PROJECT_DIR$/plots/paper/aic-bic-order.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aicbic-costfunction-relative-diff.pdf" afterPath="$PROJECT_DIR$/plots/paper/aicbic-costfunction-relative-diff.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aicbic-costfunction-relative-diff.png" afterPath="$PROJECT_DIR$/plots/paper/aicbic-costfunction-relative-diff.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/cost-function-summary-v2.pdf" afterPath="$PROJECT_DIR$/plots/paper/cost-function-summary-v2.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/cost-function-summary-v2.png" afterPath="$PROJECT_DIR$/plots/paper/cost-function-summary-v2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/cost-function-summary.pdf" afterPath="$PROJECT_DIR$/plots/paper/cost-function-summary.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/cost-function-summary.png" afterPath="$PROJECT_DIR$/plots/paper/cost-function-summary.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Cauchy - Linearized data and linear fitting.pdf" afterPath="$PROJECT_DIR$/plots/skype/Cauchy - Linearized data and linear fitting.pdf" />
@@ -28,6 +655,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Exponential aproximation (mean) vs Original set.png" afterPath="$PROJECT_DIR$/plots/skype/Linear - Exponential aproximation (mean) vs Original set.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Normal aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/skype/Linear - Normal aproximation vs Original set.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Normal aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/skype/Linear - Normal aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (linear regression) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (linear regression) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (linear regression) vs Original set.png" afterPath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (linear regression) vs Original set.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (maximum likehood) vs Original set.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (maximum likehood) vs Original set.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Weibull aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/skype/Linear - Weibull aproximation vs Original set.pdf" />
@@ -40,6 +669,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Exponential aproximation (mean) vs Original set.png" afterPath="$PROJECT_DIR$/plots/skype/Log - Exponential aproximation (mean) vs Original set.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Normal aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/skype/Log - Normal aproximation vs Original set.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Normal aproximation vs Original set.png" afterPath="$PROJECT_DIR$/plots/skype/Log - Normal aproximation vs Original set.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (linear regression) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (linear regression) vs Original set.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (linear regression) vs Original set.png" afterPath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (linear regression) vs Original set.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (maximum likehood) vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (maximum likehood) vs Original set.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (maximum likehood) vs Original set.png" afterPath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (maximum likehood) vs Original set.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Weibull aproximation vs Original set.pdf" afterPath="$PROJECT_DIR$/plots/skype/Log - Weibull aproximation vs Original set.pdf" />
@@ -48,6 +679,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Mean.png" afterPath="$PROJECT_DIR$/plots/skype/Mean.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Cost J(iterations) convergence.pdf" afterPath="$PROJECT_DIR$/plots/skype/Pareto - Cost J(iterations) convergence.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Cost J(iterations) convergence.png" afterPath="$PROJECT_DIR$/plots/skype/Pareto - Cost J(iterations) convergence.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.pdf" afterPath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.png" afterPath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Cauchy.pdf" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Cauchy.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Cauchy.png" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Cauchy.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(LR).pdf" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(LR).pdf" />
@@ -71,45 +704,176 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/costFunction.pdf" afterPath="$PROJECT_DIR$/plots/skype/costFunction.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/costFunction.png" afterPath="$PROJECT_DIR$/plots/skype/costFunction.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataProcessor/dataProcessor.m" afterPath="$PROJECT_DIR$/dataProcessor/dataProcessor.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exec.sh" afterPath="$PROJECT_DIR$/exec.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/git-setup.sh" afterPath="$PROJECT_DIR$/git-setup.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataProcessor/calcCostFunction.py" afterPath="$PROJECT_DIR$/dataProcessor/calcCostFunction.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataProcessor/calcCostFunction2.py" afterPath="$PROJECT_DIR$/dataProcessor/calcCostFunction2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot.py" afterPath="$PROJECT_DIR$/plot.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Aic-Bic.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Aic-Bic.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Aic-Bic.dat.csv" afterPath="$PROJECT_DIR$/plots/bigFlows/Aic-Bic.dat.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Cost J(iterations) convergence.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Cauchy - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Cauchy aproximation vs Original set.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Cauchy aproximation vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Correlation.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Correlation.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Correlation.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Correlation.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Empirical CDF function.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Empirical CDF function.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential - Cost J(iterations) convergence.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential - Cost J(iterations) convergence.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential - Cost J(iterations) convergence.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential aproximation (linear regression) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential aproximation (linear regression) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Exponential aproximation (mean) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Exponential aproximation (mean) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Hurst Exponent.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Hurst Exponent.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Hurst Exponent.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Hurst Exponent.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Cauchy aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Cauchy aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (linear regression) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (linear regression) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (mean) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Exponential aproximation (mean) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Normal aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Normal aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Pareto aproximation (maximum likehood) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Linear - Weibull aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Linear - Weibull aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Cauchy aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Cauchy aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (linear regression) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (linear regression) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (mean) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Exponential aproximation (mean) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Normal aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Normal aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Pareto aproximation (maximum likehood) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Log - Weibull aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Log - Weibull aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Mean.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Mean.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Mean.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Mean.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Normal aproximation vs Original set.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Normal aproximation vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Pareto - Cost J(iterations) convergence.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto - Cost J(iterations) convergence.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Pareto - Cost J(iterations) convergence.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto aproximation (linear regression) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Pareto aproximation (linear regression) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Pareto aproximation (maximum likehood) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Pareto aproximation (maximum likehood) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Cauchy.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Cauchy.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Cauchy.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Cauchy.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(LR).eps" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(LR).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(Me).eps" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Exponential(Me).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Normal.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Normal.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(LR).eps" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(LR).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(MLH).eps" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Pareto(MLH).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/QQplot - Weibull.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/QQplot - Weibull.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Standard Deviation.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Standard Deviation.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Standard Deviation.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Standard Deviation.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Weibull - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Weibull - Cost J(iterations) convergence.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Weibull - Cost J(iterations) convergence.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Weibull - Cost J(iterations) convergence.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Weibull - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/Weibull - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/Weibull aproximation vs Original set.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/Weibull aproximation vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/about.log" afterPath="$PROJECT_DIR$/plots/bigFlows/about.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/costFunction.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/costFunction.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/costFunction.eps" afterPath="$PROJECT_DIR$/plots/bigFlows/costFunction.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/dataProcessorStdOut.log" afterPath="$PROJECT_DIR$/plots/bigFlows/dataProcessorStdOut.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/bigFlows/functions-parameters.dat" afterPath="$PROJECT_DIR$/plots/bigFlows/functions-parameters.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Aic-Bic.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Aic-Bic.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Aic-Bic.dat.csv" afterPath="$PROJECT_DIR$/plots/equinix-1s/Aic-Bic.dat.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Cost J(iterations) convergence.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Cauchy - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Cauchy aproximation vs Original set.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Cauchy aproximation vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Correlation.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Correlation.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Correlation.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Correlation.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Cost J(iterations) convergence.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Cost J(iterations) convergence.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Exponential - Cost J(iterations) convergence.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential aproximation (linear regression) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Exponential aproximation (linear regression) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Exponential aproximation (mean) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Exponential aproximation (mean) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Hurst Exponent.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Hurst Exponent.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Hurst Exponent.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Hurst Exponent.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Cauchy aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Cauchy aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (linear regression) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (linear regression) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (mean) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Exponential aproximation (mean) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Normal aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Normal aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Pareto aproximation (maximum likehood) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Linear - Weibull aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Linear - Weibull aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Cauchy aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Cauchy aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (linear regression) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (linear regression) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (mean) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Exponential aproximation (mean) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Normal aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Normal aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Pareto aproximation (maximum likehood) vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Log - Weibull aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Log - Weibull aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Mean.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Mean.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Mean.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Mean.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Normal aproximation vs Original set.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Normal aproximation vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Cost J(iterations) convergence.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Cost J(iterations) convergence.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Pareto - Cost J(iterations) convergence.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto aproximation (linear regression) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Pareto aproximation (linear regression) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Pareto aproximation (maximum likehood) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Pareto aproximation (maximum likehood) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Standard Deviation.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Standard Deviation.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Cost J(iterations) convergence.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Cost J(iterations) convergence.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/Weibull - Cost J(iterations) convergence.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/Weibull aproximation vs Original set.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/Weibull aproximation vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/about.log" afterPath="$PROJECT_DIR$/plots/equinix-1s/about.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/costFunction.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/costFunction.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/costFunction.eps" afterPath="$PROJECT_DIR$/plots/equinix-1s/costFunction.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/dataProcessorStdOut.log" afterPath="$PROJECT_DIR$/plots/equinix-1s/dataProcessorStdOut.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/equinix-1s/functions-parameters.dat" afterPath="$PROJECT_DIR$/plots/equinix-1s/functions-parameters.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aic-bic-logscale-sumary.eps" afterPath="$PROJECT_DIR$/plots/paper/aic-bic-logscale-sumary.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aic-bic-order-v2.eps" afterPath="$PROJECT_DIR$/plots/paper/aic-bic-order-v2.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aic-bic-order.eps" afterPath="$PROJECT_DIR$/plots/paper/aic-bic-order.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/aicbic-costfunction-relative-diff.eps" afterPath="$PROJECT_DIR$/plots/paper/aicbic-costfunction-relative-diff.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/cost-function-summary-v2.eps" afterPath="$PROJECT_DIR$/plots/paper/cost-function-summary-v2.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/paper/cost-function-summary.eps" afterPath="$PROJECT_DIR$/plots/paper/cost-function-summary.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Aic-Bic.dat" afterPath="$PROJECT_DIR$/plots/skype/Aic-Bic.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Aic-Bic.dat.csv" afterPath="$PROJECT_DIR$/plots/skype/Aic-Bic.dat.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Cauchy - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/skype/Cauchy - Cost J(iterations) convergence.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Cauchy - Linearized data and linear fitting.dat" afterPath="$PROJECT_DIR$/plots/skype/Cauchy - Linearized data and linear fitting.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Cauchy - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/skype/Cauchy - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Cauchy aproximation vs Original set.dat" afterPath="$PROJECT_DIR$/plots/skype/Cauchy aproximation vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Correlation.dat" afterPath="$PROJECT_DIR$/plots/skype/Correlation.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Correlation.eps" afterPath="$PROJECT_DIR$/plots/skype/Correlation.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Empirical CDF function.dat" afterPath="$PROJECT_DIR$/plots/skype/Empirical CDF function.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Exponential - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/skype/Exponential - Cost J(iterations) convergence.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Exponential - Cost J(iterations) convergence.eps" afterPath="$PROJECT_DIR$/plots/skype/Exponential - Cost J(iterations) convergence.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Exponential - Linearized data and linear fitting.dat" afterPath="$PROJECT_DIR$/plots/skype/Exponential - Linearized data and linear fitting.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Exponential - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/skype/Exponential - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Exponential aproximation (linear regression) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/skype/Exponential aproximation (linear regression) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Exponential aproximation (mean) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/skype/Exponential aproximation (mean) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Hurst Exponent.dat" afterPath="$PROJECT_DIR$/plots/skype/Hurst Exponent.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Hurst Exponent.eps" afterPath="$PROJECT_DIR$/plots/skype/Hurst Exponent.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Cauchy aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Linear - Cauchy aproximation vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Exponential aproximation (linear regression) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Linear - Exponential aproximation (linear regression) vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Exponential aproximation (mean) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Linear - Exponential aproximation (mean) vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Normal aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Linear - Normal aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (linear regression) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (linear regression) vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Linear - Pareto aproximation (maximum likehood) vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Linear - Weibull aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Linear - Weibull aproximation vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Cauchy aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Log - Cauchy aproximation vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Exponential aproximation (linear regression) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Log - Exponential aproximation (linear regression) vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Exponential aproximation (mean) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Log - Exponential aproximation (mean) vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Normal aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Log - Normal aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (linear regression) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (linear regression) vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (maximum likehood) vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Log - Pareto aproximation (maximum likehood) vs Original set.eps" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Log - Weibull aproximation vs Original set.eps" afterPath="$PROJECT_DIR$/plots/skype/Log - Weibull aproximation vs Original set.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Mean.dat" afterPath="$PROJECT_DIR$/plots/skype/Mean.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Mean.eps" afterPath="$PROJECT_DIR$/plots/skype/Mean.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Normal aproximation vs Original set.dat" afterPath="$PROJECT_DIR$/plots/skype/Normal aproximation vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/skype/Pareto - Cost J(iterations) convergence.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Cost J(iterations) convergence.eps" afterPath="$PROJECT_DIR$/plots/skype/Pareto - Cost J(iterations) convergence.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.dat" afterPath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/skype/Pareto - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto aproximation (linear regression) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/skype/Pareto aproximation (linear regression) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Pareto aproximation (maximum likehood) vs Original set.dat" afterPath="$PROJECT_DIR$/plots/skype/Pareto aproximation (maximum likehood) vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Cauchy.dat" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Cauchy.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Cauchy.eps" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Cauchy.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(LR).dat" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(LR).dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(LR).eps" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(LR).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(Me).dat" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(Me).dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(Me).eps" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Exponential(Me).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Normal.dat" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Normal.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Normal.eps" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Normal.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Pareto(LR).dat" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Pareto(LR).dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Pareto(LR).eps" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Pareto(LR).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Pareto(MLH).dat" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Pareto(MLH).dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Pareto(MLH).eps" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Pareto(MLH).eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Weibull.dat" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Weibull.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/QQplot - Weibull.eps" afterPath="$PROJECT_DIR$/plots/skype/QQplot - Weibull.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Standard Deviation.dat" afterPath="$PROJECT_DIR$/plots/skype/Standard Deviation.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Standard Deviation.eps" afterPath="$PROJECT_DIR$/plots/skype/Standard Deviation.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Weibull - Cost J(iterations) convergence.dat" afterPath="$PROJECT_DIR$/plots/skype/Weibull - Cost J(iterations) convergence.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Weibull - Cost J(iterations) convergence.eps" afterPath="$PROJECT_DIR$/plots/skype/Weibull - Cost J(iterations) convergence.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Weibull - Linearized data and linear fitting.dat" afterPath="$PROJECT_DIR$/plots/skype/Weibull - Linearized data and linear fitting.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Weibull - Linearized data and linear fitting.eps" afterPath="$PROJECT_DIR$/plots/skype/Weibull - Linearized data and linear fitting.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/Weibull aproximation vs Original set.dat" afterPath="$PROJECT_DIR$/plots/skype/Weibull aproximation vs Original set.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/about.log" afterPath="$PROJECT_DIR$/plots/skype/about.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/costFunction.dat" afterPath="$PROJECT_DIR$/plots/skype/costFunction.dat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/costFunction.eps" afterPath="$PROJECT_DIR$/plots/skype/costFunction.eps" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/dataProcessorStdOut.log" afterPath="$PROJECT_DIR$/plots/skype/dataProcessorStdOut.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plots/skype/functions-parameters.dat" afterPath="$PROJECT_DIR$/plots/skype/functions-parameters.dat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.py" afterPath="$PROJECT_DIR$/run.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -127,8 +891,8 @@
       <file leaf-file-name="plot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9822">
-              <caret line="694" column="28" lean-forward="true" selection-start-line="694" selection-start-column="28" selection-end-line="694" selection-end-column="28" />
+            <state relative-caret-position="2314">
+              <caret line="1430" column="64" lean-forward="true" selection-start-line="1430" selection-start-column="64" selection-end-line="1430" selection-end-column="64" />
               <folding>
                 <element signature="e#72#82#0" expanded="true" />
               </folding>
@@ -136,19 +900,45 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="run.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aicBicRelativeDiff.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataProcessor/aicBicRelativeDiff.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="94">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#104#114#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>plot_cdf_fitting</find>
-      <find>dataprocessor_simulation_plot</find>
       <find>test</find>
       <find>def plot_aic_bic</find>
       <find># ---- Plot the order for each pcap</find>
       <find>linewidth</find>
       <find>saver_helper(fig, file_name=</find>
       <find>plot_dir</find>
-      <find>saver_helper</find>
       <find>Cost Function Su</find>
       <find>plot_cost_function_all</find>
       <find>cost-function-summary-v</find>
@@ -170,6 +960,9 @@
       <find>ax.legend(loc</find>
       <find>plot_aic_bic2</find>
       <find>plt.tight_layout()</find>
+      <find>def load_csv</find>
+      <find>def plot_cdf_fitting</find>
+      <find>saver_helper</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,12 +972,16 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/git-setup.sh" />
+        <option value="$PROJECT_DIR$/run.py" />
+        <option value="$PROJECT_DIR$/dataProcessor/calcCostFunction2.py" />
+        <option value="$PROJECT_DIR$/dataProcessor/calcCostFunction.py" />
+        <option value="$PROJECT_DIR$/dataProcessor/aicBicRelativeDiff.py" />
         <option value="$PROJECT_DIR$/plot.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
+    <option name="x" value="-2685" />
     <option name="y" value="24" />
     <option name="width" value="1319" />
     <option name="height" value="744" />
@@ -205,28 +1002,42 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="aic-bic-paper" />
+              <option name="myItemId" value="aic-bic-paper.new" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="aic-bic-paper" />
+              <option name="myItemId" value="aic-bic-paper.new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aic-bic-paper.new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aic-bic-paper.new" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="plots" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.plot">
+  <component name="RunManager" selected="Python.aicBicRelativeDiff">
     <configuration default="false" name="plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -240,6 +1051,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Aic-Bic-Paper" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="aicBicRelativeDiff" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dataProcessor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Aic-Bic-Paper" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataProcessor/aicBicRelativeDiff.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -390,12 +1218,14 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Python.plot" />
+      <item index="1" class="java.lang.String" itemvalue="Python.aicBicRelativeDiff" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.plot" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.aicBicRelativeDiff" />
+        <item index="1" class="java.lang.String" itemvalue="Python.plot" />
       </list>
     </recent_temporary>
   </component>
@@ -422,26 +1252,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="24" width="1319" height="744" extended-state="6" />
+    <frame x="-2685" y="24" width="1319" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24459876" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -451,21 +1281,54 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/plot.py</url>
-          <line>722</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/plot.py</url>
-          <line>705</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/run.py</url>
+          <line>1</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#72#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataProcessor/aicBicRelativeDiff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#104#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#72#82#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -567,18 +1430,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python3/dist-packages/matplotlib/figure.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="83">
           <caret line="1564" column="16" lean-forward="false" selection-start-line="1564" selection-start-column="16" selection-end-line="1564" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,10 +1466,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dataProcessor/data/Aic-Bic.dat" />
+    <entry file="file://$PROJECT_DIR$/Utils/Matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1175">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/skype/costFunction.dat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataProcessor/calcCostFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="105" column="24" lean-forward="false" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/Csv.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-180">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataProcessor/calcCostFunction2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="83" column="73" lean-forward="true" selection-start-line="83" selection-start-column="73" selection-end-line="83" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataProcessor/data/aic_bic_relative_difference.csv" />
+    <entry file="file://$PROJECT_DIR$/dataProcessor/data/Aic-Bic.dat.csv" />
+    <entry file="file://$PROJECT_DIR$/dataProcessor/aicBicRelativeDiff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="e#104#114#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9822">
-          <caret line="694" column="28" lean-forward="true" selection-start-line="694" selection-start-column="28" selection-end-line="694" selection-end-column="28" />
+        <state relative-caret-position="2314">
+          <caret line="1430" column="64" lean-forward="true" selection-start-line="1430" selection-start-column="64" selection-end-line="1430" selection-end-column="64" />
           <folding>
             <element signature="e#72#82#0" expanded="true" />
           </folding>
