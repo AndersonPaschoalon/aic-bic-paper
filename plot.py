@@ -1528,7 +1528,8 @@ if __name__ == "__main__":
     elif args["paper"]:
         # ./plots.py --paper
         paper_aicbic_plots_pt1()
-        paper_aicbic_plots_pt2()
+        # > to enable this plot script is required that the dataprocessor daves the cross validation empirical dataset
+        # paper_aicbic_plots_pt2()
     elif args["man"]:
         # ./plots.py --help
         help_menu()
