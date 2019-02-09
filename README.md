@@ -97,6 +97,13 @@ The first argument must be the relative path, and the second the name of the sim
 ```command
 ./plot.py --simulation "plots/<simulation_name>"
 ```
+Supose you have a pcap file the directory (relative to this one) `../Pcaps/wombat-test.pcap`. We may script the execution of the tests as below:
+
+```bash
+./run.py ../Pcaps/wombat-tests.pcap  wombat
+./plot.py --simulation "plots/wombat"
+```
+
 The command `./plot.py --paper` will also create some aditional plots for the paper. To recreate all the plots on the paper, after creating the enviroment, we must execute:
 ```bash
 ./run.py Pcaps/skype.pcap skype
@@ -134,25 +141,14 @@ These are the set of scripts located at the dataProcessor directory, used by the
     ├── _matrix2File.m_: save matrix into a text file  
     ├── _empiricalCdf.m_: eval empirical CDF  
     ├── _plotData.m_: wrapper for plot x and y data  
-    ├── _qqPlot.m_: wrapper for qqplots on octave wraper  
+    ├── _qqPlot.m_: wrapper for qqplots on octave wraper
+    ├── _sameLength.m_: ensure two vecters have the same size. If not, the bigget is truncated.
     ├── _setxlabels.m_: set x tick labels on axis on figures  
     ├── _sff2File.m_: vector to file  
     ├── __data/__: place where dataProcessor.m saves the generated data  
     ├── __figures/__: figures plotted by dataProcessor  
 - __calcCostFunction.py__: aux script, this script calcs the cost function for the simulated data and saves in the file costFunction.dat.  
-- __Not used files__:
-    - _2matrix2File.m_
-    - _calcCostFunction2.py_: test version of calcCostFunction.py
-    - _empiricalCdf2.m_ 
-    - _featureNormalize.m_
-    - _load_testData.m_
-    - _modelFittingEvaluation-plots.sh_: old plot script
-    - _vector2File.m_: sames as sff2File
-    - _xlabels.m_: 
-    - _run.sh_: old run, does not work
-    - _cdfPoissonPlot.m_: create the values of a Poisson CDF  distribution, and plot in a figure
-    - _plotCostFunction.sh_: 
-
+- __aicBicRelativeDiff.py__: script to calc the relative difference between AIC and BIC. 
 
 
 
