@@ -8,6 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 # import matplotlib
+import sys
 import collections
 # from Utils.Cd import Cd
 from Utils.Terminal import Terminal as term
@@ -18,9 +19,19 @@ from Utils.Terminal import Terminal as term
 ########################################################################################################################
 
 def signedlog(values):
+    """
+
+    :param values:
+    :return:
+    """
     return [i / abs(i) * math.log(abs(i)) for i in values]
 
 def prepare_aic_bic_csv(list_aib_bic_files):
+    """
+
+    :param list_aib_bic_files:
+    :return:
+    """
     for tab_file in list_aib_bic_files:
         table2csv(tab_file)
 
@@ -43,10 +54,15 @@ def load_csv(datafile=''):
     :param datafile: CSV file to be loaded
     :return: matrix with the CSV file data
     """
-    with open(datafile) as f:
-        lines = (line for line in f if not line.startswith('#'))
-        csv_matrix = np.loadtxt(lines, delimiter=',')
-    return csv_matrix
+    try:
+        with open(datafile) as f:
+            lines = (line for line in f if not line.startswith('#'))
+            csv_matrix = np.loadtxt(lines, delimiter=',')
+        return csv_matrix
+    except:
+        term.print_color(color="red", data="File {" + datafile + "} not found.")
+        sys.exit("File not found")
+
 
 
 def load_csv_str(datafile=''):
@@ -56,7 +72,12 @@ def load_csv_str(datafile=''):
     :return: string matrix with CSV data
     mtr_str = load_csv_str(datafile='file.csv')
     """
-    ifile = open(datafile, "rU")
+    ifile = ""
+    try:
+        ifile = open(datafile, "rU")
+    except:
+        term.print_color(color="red", data="File {" + datafile + "} not found.")
+        sys.exit("File not found")
     reader = csv.reader(ifile, delimiter=",")
     rownum = 0
     a = []
@@ -240,7 +261,6 @@ def saver_helper(figure_object, file_name="default"):
 
 def plt_free():
     """
-    #
     """
     plt.cla()
     plt.clf()
@@ -248,6 +268,12 @@ def plt_free():
 
 
 def print_info(title="title", location="path-file"):
+    """
+
+    :param title:
+    :param location:
+    :return:
+    """
     print("Plotting `{0}` > `{1}`".format(title, location))
 
 
@@ -574,6 +600,15 @@ def plot_cost_function(plot_dir, datafile, title, plotfile):
 
 def _get_ModelValueByFunction(functionIndex, costfunction_data1, costfunction_data2, costfunction_data3,
                               costfunction_data4):
+    """
+
+    :param functionIndex:
+    :param costfunction_data1:
+    :param costfunction_data2:
+    :param costfunction_data3:
+    :param costfunction_data4:
+    :return:
+    """
     value1 = float(costfunction_data1[functionIndex][1])
     value2 = float(costfunction_data2[functionIndex][1])
     value3 = float(costfunction_data3[functionIndex][1])
@@ -588,6 +623,20 @@ def _get_ModelValueByFunction(functionIndex, costfunction_data1, costfunction_da
 def plot_cost_function_all2(costfunction1="", costfunction2="", costfunction3="", costfunction4="",
                             pcapname1="", pcapname2="", pcapname3="", pcapname4="",
                             title="title", plotfile="plotfile"):
+    """
+
+    :param costfunction1:
+    :param costfunction2:
+    :param costfunction3:
+    :param costfunction4:
+    :param pcapname1:
+    :param pcapname2:
+    :param pcapname3:
+    :param pcapname4:
+    :param title:
+    :param plotfile:
+    :return:
+    """
     print_info(title=title, location=plotfile)
     line_width = 2.2
     mark_size = 8
@@ -650,6 +699,20 @@ def plot_cost_function_all2(costfunction1="", costfunction2="", costfunction3=""
 def plot_aic_bic2(aicbicfile1="", aicbicfile2="", aicbicfile3="", aicbicfile4="",
                   pcapname1="", pcapname2="", pcapname3="", pcapname4="",
                   title="title", plotfile="plotfile"):
+    """
+
+    :param aicbicfile1:
+    :param aicbicfile2:
+    :param aicbicfile3:
+    :param aicbicfile4:
+    :param pcapname1:
+    :param pcapname2:
+    :param pcapname3:
+    :param pcapname4:
+    :param title:
+    :param plotfile:
+    :return:
+    """
     print_info(title=title, location=plotfile)
     line_width = 2
     mark_size = 8
@@ -1104,10 +1167,14 @@ def plot_aic_bic(aicbicfile1, pcaptitle1, aicbicfile2, pcaptitle2,
     plt_free()
 
 
-def plot_lanfirewall_cdfs(plotdir, datasubdir, empirical_cdf_crossval, pareto_lr_cdf_approximation,
+def plot_lanfirewall_cdfs(plots_root, data_dir, plot_dir, empirical_cdf_crossval, pareto_lr_cdf_approximation,
                                pareto_mlh_cdf_approximation, weibull_cdf_approximation):
+
+    plot_title = "Approximations vs Cross-validation dataset"
+    datadir = plots_root + data_dir
+    plotdir = plots_root + plot_dir
+    print_info(title=plot_title + "(from lan-firewall pcap)", location=plotdir)
     # datafiles
-    datadir = plotdir + datasubdir
     empirical_cdf_crossval = datadir + empirical_cdf_crossval
     pareto_lr_cdf_approximation = datadir + pareto_lr_cdf_approximation
     pareto_mlh_cdf_approximation = datadir + pareto_mlh_cdf_approximation
@@ -1135,14 +1202,12 @@ def plot_lanfirewall_cdfs(plotdir, datasubdir, empirical_cdf_crossval, pareto_lr
     ax2.plot(wx, wy, '--', color="darkblue", label="Weibull", linewidth=3)
     ax2.legend(loc='upper left')
     plt.semilogx()
-    plt.xlim([-0.1, 10])
     plt.ylim([0, 1.01])
     plt.grid(color='black', linestyle=':')
-    plot_title = "Approximations vs Cross-validation dataset"
     plt.title(plot_title)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
-    saver_helper(fig2, file_name=plotdir + "paper/" + "cdfs")
+    saver_helper(fig2, file_name=plotdir + "cdfs")
     plt_free()
 
 
@@ -1316,13 +1381,18 @@ def paper_aicbic_plots_pt1():
 
 
 def paper_aicbic_plots_pt2():
-    plotdir = "./plots/"
-    datasubdir = "lan-firewall/"
+    """
+
+    :return:
+    """
+    plots_root = "./plots/"
+    data_dir = "lan-firewall/"
+    plot_dir = "paper/"
     empirical_cdf_crossval = "Empirical CDF function cross-validation.dat"
     pareto_lr_cdf_approximation = "Pareto aproximation (linear regression) vs Original set.dat"
     pareto_mlh_cdf_approximation = "Pareto aproximation (maximum likehood) vs Original set.dat"
     weibull_cdf_approximation = "Weibull aproximation vs Original set.dat"
-    plot_lanfirewall_cdfs(plotdir, datasubdir, empirical_cdf_crossval, pareto_lr_cdf_approximation,
+    plot_lanfirewall_cdfs(plots_root, data_dir, plot_dir, empirical_cdf_crossval, pareto_lr_cdf_approximation,
                           pareto_mlh_cdf_approximation, weibull_cdf_approximation)
 
 
@@ -1331,6 +1401,11 @@ def paper_aicbic_plots_pt2():
 ########################################################################################################################
 
 def plot_sim_cost_history(plot_dir):
+    """
+
+    :param plot_dir:
+    :return:
+    """
     """
     Temporary function to plot just the cost history
     # parser.add_argument("--costhistory", type=str, nargs="+", help="directory", required=False)
@@ -1361,6 +1436,8 @@ def plot_cauchy_linear_regression(plot_dir):
     # elif args["cauchy"]:
     #    # ./plots.py --costhistory "./plots/skype/"
     #    plot_cauchy_linear_regression(args.get("cauchy")[0])
+    :param plot_dir:
+    :return:
     """
     plot_linear_regression(plot_dir=plot_dir, datafile="Cauchy - Linearized data and linear fitting.dat",
                            plot_title="Cauchy - Linearized data and linear fitting",
@@ -1374,6 +1451,7 @@ def plot_cauchy_linear_regression(plot_dir):
 def help_menu():
     """
     Display a short tutorial of how use this script
+    :return:
     """
     print("Usage: plot.py [OPTION] [DIRECTORY]")
     print("Create the plots for the simulations.")
@@ -1436,7 +1514,6 @@ if __name__ == "__main__":
                         help="run sumarry plots for 4 the 4 experiments used on the paper..",
                         required=False)
 
-
     parser.add_argument("--man", action='store_true', help="Manual", required=False)
     parser.add_argument("--test", action='store_true', help="Run plots being developed", required=False)
 
@@ -1451,8 +1528,6 @@ if __name__ == "__main__":
     elif args["paper"]:
         # ./plots.py --paper
         paper_aicbic_plots_pt1()
-    elif args["paper2"]:
-        # ./plots.py --paper
         paper_aicbic_plots_pt2()
     elif args["man"]:
         # ./plots.py --help
