@@ -4,18 +4,18 @@ This repository constains the set of scripts used on the paper "Automated Select
 through Bayesian and Akaike Information Criteria", and a tutorial of how to reproduce the experiments with the same or new pcap files.
 
 Sumary:
-* Dependencies
-* Setup Enviroment
-* Tutorial
-* Repository files documentation
+1. Dependencies
+2. Setup Enviroment
+3. Tutorial
+4. Files documentation
 
 ---
 
-## Dependencies
+##1. Dependencies
 
 To run these scripts, the follow dependencies are required:
 
-### Python
+###1.1 Python
 ```bash
 sudo apt install python3-pip
 pip install -U matplotlib --user
@@ -23,7 +23,7 @@ pip3 install numpy
 sudo apt-get install python3-tk
 ```
 
-### Octave
+###1.2 Octave
 To install and setup octave, use the follow commands:
 ```bash
 # add repository
@@ -53,30 +53,26 @@ sudo chown $USER ~/.config/octave/qt-settings
 ```
 
 ---
-## Setup Enviroment
+##2. Setup Enviroment
 
-### Setup
 
-First, start clonning this repository:
+###2.1 Setup
+
+The pcap files used on these experiments are provided on the repository [https://github.com/AndersonPaschoalon/Pcaps](https://github.com/AndersonPaschoalon/Pcaps).
+To run the tests, we recomend clonning this repository (or its [code-only version](code.only)) and the Pcap repository side by side:
+
+(root-dir)/
+  ├── aic-bic-paper/
+  ├── Pcaps/
+
+To prepare the You can do this by using the follow commands:
+
 ```bash
-git clone https://github.com/AndersonPaschoalon/aic-bic-paper
-```
-To donwload the pcap files used in the paper, clone the follow repository on the root directory of this project:
-```bash
+mkdir aic-bic-tests
+cd aic-bic-tests
 git clone https://github.com/AndersonPaschoalon/Pcaps
+git clone git clone https://github.com/AndersonPaschoalon/aic-bic-paper
 ```
-So the structure will be like:  
-├── __aic-bic-paper/__ : root directory  
-├── __Cd/__ : python package used by the scripts  
-├── __dataProcessor/__ : octave, shell and python scripts  
-├── exec.sh : simulation commands  
-├── git-setup.sh : split/merge large files script  
-├── __Pcap/__ : pcap files directory  
-├── plot.py : plot script  
-├── __plots/__ : directory where the plots are placed  
-├── README.md : this readme file  
-├── run.py : script for automating the simulations 
-
 To generate the pcap files:
 ```bash
 ./git-setup.sh --merge
@@ -85,7 +81,8 @@ After that, to clean-up the local repository (excludign part files), you may exe
 ```bash
 ./git-setup.sh --rm
 ```
-### Runing
+
+###2.2 Runing
 
 To run the simulations, use run.py. This is a script to automate and simplify the script execution, maintaining the consistency, without having to know inner details.
 Runing `run.py --help` we have an example:
@@ -97,6 +94,10 @@ The first argument must be the relative path, and the second the name of the sim
 ```command
 ./plot.py --simulation "plots/<simulation_name>"
 ```
+
+---
+##3. Tutorial
+
 Supose you have a pcap file the directory (relative to this one) `../Pcaps/wombat-test.pcap`. We may script the execution of the tests as below:
 
 ```bash
@@ -104,7 +105,8 @@ Supose you have a pcap file the directory (relative to this one) `../Pcaps/womba
 ./plot.py --simulation "plots/wombat"
 ```
 
-The command `./plot.py --paper` will also create some aditional plots for the paper. To recreate all the plots on the paper, after creating the enviroment, we must execute:
+The command `./plot.py --paper` will also create some aditional plots for the paper. 
+To recreate all the plots on the paper, after creating the enviroment, we must execute:
 ```bash
 ./run.py Pcaps/skype.pcap skype
 ./run.py Pcaps/bigFlows.pcap bigFlows
@@ -118,8 +120,7 @@ The command `./plot.py --paper` will also create some aditional plots for the pa
 ```
 
 ---
-
-## Files documentation
+##4. Files documentation
 
 ### dataProcessor
 These are the set of scripts located at the dataProcessor directory, used by the run.py script.  
