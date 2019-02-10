@@ -61,9 +61,9 @@ sudo chown $USER ~/.config/octave/qt-settings
 The pcap files used on these experiments are provided on the repository [https://github.com/AndersonPaschoalon/Pcaps](https://github.com/AndersonPaschoalon/Pcaps).
 To run the tests, we recomend clonning this repository (or its [code-only version](code.only)) and the Pcap repository side by side:
 
-(root-dir)/
-  ├── aic-bic-paper/
-  ├── Pcaps/
+(root-dir)/  
+  ├── aic-bic-paper/  
+  ├── Pcaps/  
 
 To prepare the You can do this by using the follow commands:
 
