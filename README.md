@@ -11,11 +11,11 @@ Sumary:
 
 ---
 
-##1. Dependencies
+## 1. Dependencies
 
 To run these scripts, the follow dependencies are required:
 
-###1.1 Python
+### 1.1 Python
 ```bash
 sudo apt install python3-pip
 pip install -U matplotlib --user
@@ -23,7 +23,7 @@ pip3 install numpy
 sudo apt-get install python3-tk
 ```
 
-###1.2 Octave
+### 1.2 Octave
 To install and setup octave, use the follow commands:
 ```bash
 # add repository
@@ -53,10 +53,10 @@ sudo chown $USER ~/.config/octave/qt-settings
 ```
 
 ---
-##2. Setup Enviroment
+## 2. Setup Enviroment
 
 
-###2.1 Setup
+### 2.1. Setup
 
 The pcap files used on these experiments are provided on the repository [https://github.com/AndersonPaschoalon/Pcaps](https://github.com/AndersonPaschoalon/Pcaps).
 To run the tests, we recomend clonning this repository (or its [code-only version](code.only)) and the Pcap repository side by side:
@@ -82,7 +82,7 @@ After that, to clean-up the local repository (excludign part files), you may exe
 ./git-setup.sh --rm
 ```
 
-###2.2 Runing
+### 2.2. Runing
 
 To run the simulations, use run.py. This is a script to automate and simplify the script execution, maintaining the consistency, without having to know inner details.
 Runing `run.py --help` we have an example:
@@ -96,7 +96,7 @@ The first argument must be the relative path, and the second the name of the sim
 ```
 
 ---
-##3. Tutorial
+## 3. Tutorial
 
 Supose you have a pcap file the directory (relative to this one) `../Pcaps/wombat-test.pcap`. We may script the execution of the tests as below:
 
@@ -120,7 +120,7 @@ To recreate all the plots on the paper, after creating the enviroment, we must e
 ```
 
 ---
-##4. Files documentation
+## 4. Files documentation
 
 ### dataProcessor
 These are the set of scripts located at the dataProcessor directory, used by the run.py script.  
