@@ -124,26 +124,26 @@ To recreate all the plots on the paper, after creating the enviroment, we must e
 
 ### dataProcessor
 These are the set of scripts located at the dataProcessor directory, used by the run.py script.  
-- __pcap-filter.sh__ : extract inter packet times from pcaps  
+- __pcap-filter.sh__ : extract inter packet times from pcaps.  
     ├── _timerelative2timedelta.m_: script used by pcap filter  
-- __dataProcessor.m__: run simulations and stores the data on data/ directory  
+- __dataProcessor.m__: run simulations and stores the data on data/ directory.   
     ├── _adiff.m_: calc the absolute difference   
     ├── _cdfCauchyPlot.m_: create the values of a Cauchy CDF  distribution, and plot in a figure  
     ├── _cdfExponentialPlot.m_: create the values of a Exponential CDF  distribution, and plot in a figure  
     ├── _cdfNormalPlot.m_: create the values of a Normal CDF  distribution, and plot in a figure  
-    ├── _cdfWeibullPlot.m_: create the values of a Weibull CDF  distribution, and plot in a figure  
+    ├── _cdfWeibullPlot.m_: create the values of a Weibull CDF  distribution, and plot in a figure   
     ├── _cdfParetoPlot.m_: create the values of a Pareto CDF  distribution, and plot in a figure  
     ├── _cdfplot.m_: create the values of a Cauchy CDF  distribution, and plot in a figure  
     ├── _computeCost.m_: compute cost for linear regression  
     ├── _cumulativeData.m_: acumulates a vector  
     ├── _gradientDescent.m_: gradient descendent algorithm  
-    ├── _informationCriterion.m_:  
-    ├── _likehood\_log.m_:  
+    ├── _informationCriterion.m_:  calcs AIC or BIC of a given function and dataset  
+    ├── _likehood\_log.m_:  calcs the logarithm of the likelihood function  
     ├── _matrix2File.m_: save matrix into a text file  
     ├── _empiricalCdf.m_: eval empirical CDF  
     ├── _plotData.m_: wrapper for plot x and y data  
-    ├── _qqPlot.m_: wrapper for qqplots on octave wraper 
-    ├── _sameLength.m_: ensure two vecters have the same size. If not, the bigget is truncated. 
+    ├── _qqPlot.m_: wrapper for qqplots on octave wraper   
+    ├── _sameLength.m_: ensure two vecters have the same size. If not, the bigget is truncated  
     ├── _setxlabels.m_: set x tick labels on axis on figures  
     ├── _sff2File.m_: vector to file  
     ├── __data/__: place where dataProcessor.m saves the generated data  
