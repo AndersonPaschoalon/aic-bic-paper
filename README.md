@@ -142,8 +142,8 @@ These are the set of scripts located at the dataProcessor directory, used by the
     ├── _matrix2File.m_: save matrix into a text file  
     ├── _empiricalCdf.m_: eval empirical CDF  
     ├── _plotData.m_: wrapper for plot x and y data  
-    ├── _qqPlot.m_: wrapper for qqplots on octave wraper
-    ├── _sameLength.m_: ensure two vecters have the same size. If not, the bigget is truncated.
+    ├── _qqPlot.m_: wrapper for qqplots on octave wraper 
+    ├── _sameLength.m_: ensure two vecters have the same size. If not, the bigget is truncated. 
     ├── _setxlabels.m_: set x tick labels on axis on figures  
     ├── _sff2File.m_: vector to file  
     ├── __data/__: place where dataProcessor.m saves the generated data  
